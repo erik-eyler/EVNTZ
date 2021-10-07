@@ -18,6 +18,10 @@ Event Title
 Cost
 Event Details
 Age Group – dropdown
+First name
+Last name
+Username
+email
 
 ## Wireframes
 
