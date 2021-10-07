@@ -33,4 +33,4 @@ Link to the team expectations: <https://docs.google.com/document/d/1yet1_8v38Ygr
 
 #### MVP
 
-Link to the GitHub Projects board: <https://whimsical.com/evntz-component-hierarchy-TGszLt3TnKHoNKrdniLCwW>
+Link to the GitHub Projects board: <hhttps://github.com/erik-eyler/EVNTZ/projects/1>
