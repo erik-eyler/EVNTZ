@@ -40,7 +40,7 @@ User Schema
 
 ## Wireframes
 
-![Home]()
+![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home.png)
 ![Events]()
 ![Event Details]()
 ![Create Event]()
