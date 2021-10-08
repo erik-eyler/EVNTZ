@@ -41,13 +41,12 @@ User Schema
 ## Wireframes
 
 ![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home.png)
-![Events]()
 ![Event Details]()
 ![Create Event]()
 
 
 ## Component Hierarchy
-![Component Hierarchy]()
+![Component Hierarchy](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/EVNTZ%20-%20Component%20Hierarchy.png)
 
 ### Team Expectations
 
