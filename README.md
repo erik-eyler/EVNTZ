@@ -23,7 +23,7 @@ Events Schema
   title: {type: String, required: true},
   cost: {type: Integer, required: false},
   details: {type: String, required: true},
-  ageGroup: {type: String, enum: ["All Ages", "18 and over", "16 and over"]
+  ageGroup: {type: String, enum: ["All Ages", "18 and over", "16 and over"], required: true}
 }
 ```
 
