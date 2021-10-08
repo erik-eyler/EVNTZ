@@ -3,6 +3,7 @@
 ## Project Name
 
 EVNTZ
+[GitHub](https://github.com/erik-eyler/EVNTZ/projects/1)
 
 ## Project Description
 
@@ -52,4 +53,4 @@ User Schema
 
 #### MVP
 
-Link to the GitHub Projects board: <https://github.com/erik-eyler/EVNTZ/projects/1>
+
