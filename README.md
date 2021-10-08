@@ -37,15 +37,18 @@ User Schema
 
 ## Wireframes
 
-Link to the wireframe: <https://www.figma.com/file/wiRCNxKLVouK9VibK3z5ZU/EVNTZ>
+![Home]()
+![Events]()
+![Event Details]()
+![Create Event]()
+
 
 ## Component Hierarchy
-
-Link to the component heirarchy: <https://whimsical.com/evntz-component-hierarchy-TGszLt3TnKHoNKrdniLCwW>
+![Component Hierarchy]()
 
 ### Team Expectations
 
-Link to the team expectations: <https://docs.google.com/document/d/1yet1_8v38YgrfXC9uqyPF_FOblKqw2sE8zhobY-SUG8/edit>
+[Team Expectations](https://docs.google.com/document/d/1yet1_8v38YgrfXC9uqyPF_FOblKqw2sE8zhobY-SUG8/edit)
 
 #### MVP
 
