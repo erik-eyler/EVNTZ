@@ -42,7 +42,7 @@ User Schema
 
 ![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home.png)
 ![Event Details](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Event%20Details.png)
-![Create Event]()
+![Create Event](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Create%20Event.png)
 
 
 ## Component Hierarchy
