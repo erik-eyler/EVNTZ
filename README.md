@@ -56,7 +56,7 @@ User Schema
 
 [GitHub Projects](https://github.com/erik-eyler/EVNTZ/projects/1)
 
-# Client (Front End)
+#### Client (Front End)
 - Have a working, interactive React app, built using npx create-react-app client
 - Have at least 6 separate, rendered components in an organized and understandable React file structure.
 - Utilize functional and class React components appropriately.
@@ -68,16 +68,16 @@ User Schema
 - Listing Screen
 - Detail Screen
 
-# Server (Back End)
+#### Server (Back End)
 - Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
 - Authentication!
 
-# Styling
+#### Styling
 - Be styled with CSS.
 - Use flexbox (display: flex) or CSS Grid.
 - Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile).
 
-# Deployment
+#### Deployment
 - Deploy the fully functional front-end via Netlify.
 - Deploy the back-end via [Heroku](https://www.heroku.com/).
 - Deploy the MongoDB database on [MongoDB Atlas](MongoDB Atlas).
