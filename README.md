@@ -4,12 +4,10 @@
 
 EVNTZ
 
-[GitHub](https://github.com/erik-eyler/EVNTZ/projects/1)
-
 
 ## Project Description
 
-A web app for community events in the fictional town of Newcastle, NJ. Users can browse upcoming events which display key logistical information, including date, time, location, cost, and a short description of the event. Users can also create and edit their own events.
+EVNTZ is a web app for community events in the fictional town of Newcastle, NJ. Users are able to create their own account which is stored with industry standard JWT authentication methods. Users are then able to log in at any time and view the list of events, and also view full event details which include date and time, location, cost, age group and event specific directions and requirements. Users are also able to edit existing events, delete events and add their own to expand the opportunties for our fictional community to come together and connect. 
 
 ## Schema
 
@@ -55,4 +53,5 @@ User Schema
 
 #### MVP
 
+[GitHub Projects](https://github.com/erik-eyler/EVNTZ/projects/1)
 
