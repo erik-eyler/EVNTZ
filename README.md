@@ -10,18 +10,30 @@ A web app for community events in the fictional town of Newcastle, NJ. Users can
 
 ## Schema
 
-Date
-Start time
-End time
-Location
-Event Title
-Cost
-Event Details
-Age Group – dropdown
-First name
-Last name
-Username
-email
+Events Schema
+```javascript
+{
+  date: {type: String, required: true},
+  startTime: {type: String, required: true},
+  endTime: {type: String, required: true},
+  location: {type: String, required: true},
+  title: {type: String, required: true},
+  cost: {type: Integer, required: false},
+  details: {type: String, required: true},
+  ageGroup: {type: String, enum: ["All Ages", "18 and over", "16 and over"]
+}
+```
+
+User Schema
+```javascript
+{
+  firstName: {type: String, required: true},
+  lastName: {type: String, required: true},
+  username: {type: String, required: true},
+  email: {type: String, required: true},
+  password: {type: String, required: true}
+}
+```
 
 ## Wireframes
 
