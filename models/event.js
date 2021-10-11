@@ -16,7 +16,7 @@ const Event = new Schema(
       enum: ["All Ages", "18 and over", "16 and over"],
       required: false,
     },
-    // imgUrl: {type: String, required: false}
+    imgUrl: { type: String, required: false },
   },
   { timestamps: true }
 );

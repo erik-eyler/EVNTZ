@@ -23,9 +23,9 @@ const Home = () => {
     { title: "Service", description: "Love Newcastle? Volunteer! We regularly post community volunteer opportunties in partnership with beloved Newcastle organziations such as the Newcastle Pantry as well as school groups and individual organizers."}
   ]
 
-  const displayBranding =  branding.map((item) => {
+  const displayBranding =  branding.map((item, index) => {
     return (
-      <div>
+      <div key={index}>
         <h3 className="heading">{item.title}</h3>
         <p className="description">{item.description}</p>
       </div>
@@ -34,6 +34,7 @@ const Home = () => {
 
   const cards = events.map((event, index) => index < 4 ? 
     <EventCard
+      key={index}
       id={event._id}
       title={event.title}
       date={event.date}
