@@ -12,7 +12,7 @@ const Event = new Schema(
     cost: { type: String, required: false },
     details: { type: String, required: true },
     ageGroup: { type: String, required: true },
-    // imgUrl: {type: String, required: false}
+    imgUrl: { type: String, required: false },
   },
   { timestamps: true }
 );
