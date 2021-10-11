@@ -10,7 +10,6 @@ const Event = new Schema(
     location: { type: String, required: true },
     title: { type: String, required: true },
     cost: { type: String, required: false },
-    // headline: { type: String, required: true},
     details: { type: String, required: true },
     ageGroup: {
       type: String,
