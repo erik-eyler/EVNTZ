@@ -7,6 +7,7 @@ import EventEdit from "./screens/EventEdit/EventEdit";
 import Events from "./screens/Events/Events";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
+import Contact from "./screens/Contact/Contact";
 
 const App = () => {
   return (
@@ -38,6 +39,10 @@ const App = () => {
 
         <Route exact path="/sign-up">
           <SignUp />
+        </Route>
+
+        <Route exact path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </div>
