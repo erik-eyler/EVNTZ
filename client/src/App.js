@@ -16,27 +16,27 @@ const App = () => {
           <Home />
         </Route>
 
-        <Route exact path="/events/:id">
-          <EventDetail />
-        </Route>
-
-        <Route path="/events/create">
+        <Route exact path="/events/create">
           <EventCreate />
-        </Route>
-
-        <Route path="/events/:id/edit">
-          <EventEdit />
         </Route>
 
         <Route exact path="/events">
           <Events />
         </Route>
 
-        <Route path="/sign-in">
+        <Route exact path="/events/:id">
+          <EventDetail />
+        </Route>
+
+        <Route exact path="/events/:id/edit">
+          <EventEdit />
+        </Route>
+
+        <Route exact path="/sign-in">
           <SignIn />
         </Route>
 
-        <Route path="/sign-up">
+        <Route exact path="/sign-up">
           <SignUp />
         </Route>
       </Switch>

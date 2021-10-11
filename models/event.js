@@ -11,11 +11,7 @@ const Event = new Schema(
     title: { type: String, required: true },
     cost: { type: String, required: false },
     details: { type: String, required: true },
-    ageGroup: {
-      type: String,
-      enum: ["All Ages", "18 and over", "16 and over"],
-      required: false,
-    },
+    ageGroup: { type: String, required: true },
     imgUrl: { type: String, required: false },
   },
   { timestamps: true }
