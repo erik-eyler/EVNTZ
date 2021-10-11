@@ -9,13 +9,15 @@ const Event = new Schema(
     endTime: { type: String, required: true },
     location: { type: String, required: true },
     title: { type: String, required: true },
-    cost: { type: mongoose.Types.Decimal128, required: false },
+    cost: { type: String, required: false },
+    // headline: { type: String, required: true},
     details: { type: String, required: true },
     ageGroup: {
       type: String,
       enum: ["All Ages", "18 and over", "16 and over"],
       required: false,
     },
+    // imgUrl: {type: String, required: false}
   },
   { timestamps: true }
 );
