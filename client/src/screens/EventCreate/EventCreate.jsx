@@ -1,3 +1,5 @@
+import EventForm from '../../components/EventForm/EventForm';
+
 const EventCreate = () => {
   return (
     <div>
