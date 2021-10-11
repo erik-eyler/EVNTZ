@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Layout } from "./components/Layout/Layout";
-import { EventCard } from './components/EventCard/EventCard'
+import Layout from "../../components/Layout/Layout";
+import EventCard from "../../components/EventCard/EventCard";
 import { getEvents } from "../../services/events";
 
 const Home = () => {
@@ -33,7 +33,8 @@ const Home = () => {
   })
 
   const cards = events.map((event, index) => index < 4 ? 
-    <EventCard 
+    <EventCard
+      id={event._id}
       title={event.title}
       date={event.date}
       startTime={event.startTime}
