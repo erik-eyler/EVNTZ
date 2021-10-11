@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout/Layout";
-import { Link } from "react-router-dom";
-
+import "./Contact.css";
+import linkedInBug from "../../assets/LI-In-Bug.png";
+import gitHubBug from "../../assets/GitHub-Mark-120px-plus.png"
 
 const Contact = () => {
   return (
@@ -10,39 +11,60 @@ const Contact = () => {
           <h1>Meet the Team</h1>
           <p>The EVNTZ APP ETC</p>
         </div>
-        <div>
-          <div>
-            <p>Breck</p>
+        <div className="contact-section">
+          <div className="contact-card">
+            <img src="" alt="" className="contact-image" />
+            <p>Breck Zeyer</p>
             <div>
-              <button>LinkedIn</button>
-              <button>Github</button>
+              <a href="" rel="noreferrer noopener">
+                <img className="social-bug" src={linkedInBug} alt="Breck Zeyer linkedIn" />
+              </a>
+              <a href="" rel="noreferrer noopener">
+                <img className="social-bug" src={gitHubBug} alt="Breck Zeyer GitHub" />
+              </a>
             </div>
           </div>
-          <div>
-            <p>Erik</p>
+          <div className="contact-card">
+            <img src="" alt="" className="contact-image" />
+            <p>Katherine Boates-Goudreau</p>
             <div>
-              <button>LinkedIn</button>
-              <button>Github</button>
+              <a href="https://www.linkedin.com/in/katherine-boates-goudreau/" rel="noreferrer noopener">
+                <img className="social-bug" src={linkedInBug} alt="Katherine Boates-Goudreau linkedIn" />
+              </a>
+              <a href="https://github.com/ktbg" rel="noreferrer noopener">
+                <img className="social-bug" src={gitHubBug} alt="Katherine Boates-Goudreau GitHub" />
+              </a>
             </div>
           </div>
-          <div>
-          <p>Grecia</p>
+          <div className="contact-card">
+            <img src="" alt="" className="contact-image" />
+            <p>Grecia Castillo</p>rel="noreferrer noopener"
             <div>
-              <button>LinkedIn</button>
-              <button>Github</button>
+              <a href="" rel="noreferrer noopener">
+                <img className="social-bug" src={linkedInBug} alt="Grecia Castillo linkedIn" />
+              </a>
+              <a href="" rel="noreferrer noopener">
+                <img className="social-bug" src={gitHubBug} alt="Grecia Castillo GitHub" />
+              </a>
             </div>
           </div>
-          <div>
-          <p>Katie</p>
+          <div className="contact-card">
+            <img src="" alt="" className="contact-image" />
+            <p>Erik Eyler</p>
             <div>
-              <button>LinkedIn</button>
-              <button>Github</button>
+              <a href="" rel="noreferrer noopener">
+                <img className="social-bug" src={linkedInBug} alt="Erik Eyler linkedIn" />
+              </a>
+              <a href="https://github.com/erik-eyler" rel="noreferrer noopener">
+                <img className="social-bug" src={gitHubBug} alt="Erik Eyler GitHub" />
+              </a>
             </div>
           </div>
+          
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

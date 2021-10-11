@@ -62,7 +62,7 @@ const Home = () => {
           <div className="hero-img">
             <img
               src="https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80"
-              alt="90s Dance Party photo by Samantha Gades on Unsplash"
+              alt="90s Dance Party by Samantha Gades on Unsplash"
             />
           </div>
         </div>
