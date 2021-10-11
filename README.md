@@ -2,7 +2,7 @@
 
 ## Project Name
 
-EVNTZ
+[EVNTZ](https://suspicious-shirley-aff7c1.netlify.app/)
 
 
 ## Project Description
