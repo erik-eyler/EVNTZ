@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 
 const SignUp = (props) => {
+  const [toggle, setToggle] = useState(false);
   const history = useHistory();
   
   const [form, setForm] = useState({
@@ -24,16 +25,18 @@ const SignUp = (props) => {
       [event.target.name]: event.target.value,
     });
 
-  const onSignUp = async (event) => {
-    event.preventDefault();
+  const onSignUp = async () => {
     const { setUser } = props;
     try {
       const user = await signUp(form);
       setUser(user);
+      setToggle(false);
       history.push("/");
     } catch (error) {
       console.error(error);
       setForm({
+        firstName: "",
+        lastName: "",
         username: "",
         email: "",
         password: "",
@@ -44,18 +47,14 @@ const SignUp = (props) => {
     }
   };
 
-  const renderError = () => {
-    const toggleForm = form.isError ? "danger" : "";
-    if (form.isError) {
-      return (
-        <button type="submit" className={toggleForm}>
-          {form.errorMsg}
-        </button>
-      );
+  const submitForm = (event) => {
+    event.preventDefault();
+    if(form.password !== form.passwordConfirmation){
+      setToggle(true);
     } else {
-      return <button type="submit">Sign Up</button>;
+      onSignUp();
     }
-  };
+  }
 
   const {
     firstName,
@@ -66,11 +65,13 @@ const SignUp = (props) => {
     passwordConfirmation,
   } = form;
   
+ 
+
   return (
     <Layout>
     <div className="form-container">
       <h3>Sign Up</h3>
-      <form onSubmit={onSignUp}>
+      <form onSubmit={submitForm}>
         <label>First Name</label>
         <input
           required
@@ -125,7 +126,8 @@ const SignUp = (props) => {
           placeholder="Confirm Password"
           onChange={handleChange}
         />
-        {renderError()}
+        {toggle ? <div className="danger">Passwords do not match</div> : null}
+        <button type="submit">Sign Up</button>
       </form>
       </div>
       </Layout>
