@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import "./App.css";
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./screens/Home/Home";
 import EventDetail from "./screens/EventDetail/EventDetail";
 import EventCreate from "./screens/EventCreate/EventCreate";
@@ -14,37 +14,35 @@ import { verifyUser } from "./services/users";
 const App = () => {
   const [user, setUser] = useState(null);
 
-  const history = useHistory()
-
   useEffect(() => {
     const fetchUser = async () => {
-      const user = await verifyUser()
-      user ? setUser(user) : setUser(null)
-    }
-    fetchUser()
-  }, [])
+      const user = await verifyUser();
+      user ? setUser(user) : setUser(null);
+    };
+    fetchUser();
+  }, []);
 
   return (
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home user={user}/>
+          <Home user={user} />
         </Route>
 
         <Route exact path="/events/create">
-          {user ? <EventCreate user={user} /> : history.push("/sign-up")}
+          {user ? <EventCreate user={user} /> : <Redirect to="/sign-up" />}
         </Route>
 
         <Route exact path="/events">
-          <Events user={user}/>
+          <Events user={user} />
         </Route>
 
         <Route exact path="/sign-in">
-          <SignIn setUser={setUser}/>
+          <SignIn setUser={setUser} />
         </Route>
 
         <Route exact path="/sign-up">
-          <SignUp setUser={setUser}/>
+          <SignUp setUser={setUser} />
         </Route>
 
         <Route exact path="/contact">
@@ -52,13 +50,12 @@ const App = () => {
         </Route>
 
         <Route exact path="/events/:id/edit">
-        {user ? <EventEdit user={user} /> : history.push("/sign-up")}
+          {user ? <EventEdit user={user} /> : <Redirect to="/" />}
         </Route>
 
         <Route exact path="/events/:id">
-          <EventDetail user={user}/>
+          <EventDetail user={user} />
         </Route>
-
       </Switch>
     </div>
   );

@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import EventCard from "../../components/EventCard/EventCard";
 import { getEvents } from "../../services/events";
 
-const Home = () => {
+const Home = (props) => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -46,7 +46,7 @@ const Home = () => {
   if (loading) <div>Loading...</div>;
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div>
         <div>
           <div className="hero-text">
