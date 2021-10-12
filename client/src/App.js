@@ -8,6 +8,7 @@ import EventEdit from "./screens/EventEdit/EventEdit";
 import Events from "./screens/Events/Events";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
+import SignOut from "./screens/SignOut/SignOut";
 import Contact from "./screens/Contact/Contact";
 import { verifyUser } from "./services/users";
 
@@ -39,6 +40,10 @@ const App = () => {
 
         <Route exact path="/sign-in">
           <SignIn setUser={setUser} />
+        </Route>
+
+        <Route exact path="/sign-out">
+          <SignOut setUser={setUser} />
         </Route>
 
         <Route exact path="/sign-up">
