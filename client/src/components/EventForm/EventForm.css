@@ -1,0 +1,30 @@
+.form {
+  margin-top: 20px;
+}
+
+.title,
+.date-time,
+.age-cost,
+.title,
+.location,
+.details {
+  color: #006d77;
+  font-weight: bold;
+}
+
+input {
+  border: white;
+  box-shadow: 0px 2px 5px rgb(210, 207, 207);
+  padding: 2px;
+  /* width: 100px; */
+}
+
+.title-input,
+.location-input,
+.details-input {
+  width: 50%;
+}
+
+.button {
+  background-color: #e29578;
+}
