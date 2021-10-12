@@ -2,7 +2,7 @@ import Layout from "../../components/Layout/Layout";
 import { useState, useEffect } from "react";
 import EventCard from "../../components/EventCard/EventCard";
 import { getEvents } from "../../services/events";
-
+import './Events.css'
 
 
 const Events = () => {
@@ -19,6 +19,7 @@ const Events = () => {
   }, []);
 
   const cards = events.map((event, index) =>
+  
     <EventCard
     key={index}
     id={event._id}
@@ -33,7 +34,7 @@ const Events = () => {
 
   return (
     <Layout>
-      <div>
+      <div className="events-container">
         {cards}
       </div>
     </Layout>

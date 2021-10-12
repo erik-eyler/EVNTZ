@@ -1,13 +1,15 @@
 import "./EventDetail.css"
 import { useState, useEffect } from 'react'
 import { getEvent, deleteEvent } from '../../services/events'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useHistory } from 'react-router-dom'
 import Layout from "../../components/Layout/Layout";
 
 const EventDetail = (props) => {
   const [event, setEvent] = useState(null)
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
+  const [deleted, setDeleted] = useState(false)
+  const history = useHistory()
 
   useEffect(() => {
     const fetchEvent = async () => {
@@ -21,6 +23,12 @@ const EventDetail = (props) => {
   console.log(event);
   if (!isLoaded) {
     return <h1>Loading...</h1>
+  }
+
+  const handleClick = async () => {
+    const deleted = await deleteEvent(event?._id)
+    setDeleted(deleted)
+    history.push('/events')
   }
 
   return (
@@ -38,7 +46,7 @@ const EventDetail = (props) => {
         <Link to={`/events/${event?._id}/edit`}>
           Edit
         </Link>
-        <button onClick={() => deleteEvent(event?._id)}>
+        <button onClick={() => handleClick()}>
           Delete
         </button>
       </div>

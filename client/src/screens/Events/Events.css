@@ -1,3 +1,8 @@
 a:visited {
   color: black;
 }
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+}
