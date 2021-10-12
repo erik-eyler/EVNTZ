@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import "./App.css";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Home from "./screens/Home/Home";
@@ -8,29 +9,42 @@ import Events from "./screens/Events/Events";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
 import Contact from "./screens/Contact/Contact";
+import { verifyUser } from "./services/users";
 
 const App = () => {
+  const [user, setUser] = useState(null);
+
+  const history = useHistory()
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
+
   return (
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home user={user}/>
         </Route>
 
         <Route exact path="/events/create">
-          <EventCreate />
+          {user ? <EventCreate user={user} /> : history.push("/sign-up")}
         </Route>
 
         <Route exact path="/events">
-          <Events />
+          <Events user={user}/>
         </Route>
 
         <Route exact path="/sign-in">
-          <SignIn />
+          <SignIn setUser={setUser}/>
         </Route>
 
         <Route exact path="/sign-up">
-          <SignUp />
+          <SignUp setUser={setUser}/>
         </Route>
 
         <Route exact path="/contact">
@@ -38,11 +52,11 @@ const App = () => {
         </Route>
 
         <Route exact path="/events/:id/edit">
-          <EventEdit />
+        {user ? <EventEdit user={user} /> : history.push("/sign-up")}
         </Route>
 
         <Route exact path="/events/:id">
-          <EventDetail />
+          <EventDetail user={user}/>
         </Route>
 
       </Switch>
