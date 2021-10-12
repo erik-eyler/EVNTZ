@@ -1,11 +1,16 @@
+import Layout from '../Layout/Layout';
+import '../EventForm/EventForm.css';
+
 const EventForm = (props) => {
   return (
-    <div>
+    <Layout>
+    <div className='form'>
       <form onSubmit={props.handleSubmit}>
 
         <div className='title'>
-        <label>Title</label>
-          <input
+        <label>TITLE</label>
+            <input
+            className='title-input'
             placeholder='title'
             name='title'
             value={props.event.title}
@@ -14,7 +19,7 @@ const EventForm = (props) => {
         <br />
 
         <div className='date-time'>
-        <label>Date</label>
+        <label>DATE</label>
           <input
             type='date'
             min='2021-10-10'
@@ -23,7 +28,7 @@ const EventForm = (props) => {
             value={props.event.date}
             onChange={props.handleChange} />
         
-        <label>Start Time</label>
+        <label>START TME</label>
           <input
             type='time'
             placeholder='--'
@@ -31,7 +36,7 @@ const EventForm = (props) => {
             value={props.event.startTime}
             onChange={props.handleChange} />
         
-        <label>End Time</label>
+        <label>END TIME</label>
           <input
             type='time'
             placeholder='--'
@@ -42,7 +47,7 @@ const EventForm = (props) => {
         <br/>
         
         <div className='age-cost'>
-        <label>Age Group</label>
+        <label>AGE GROUP</label>
         <select
             placeholder='Select Age Group'
             name='ageGroup'
@@ -53,7 +58,7 @@ const EventForm = (props) => {
           <option value='18 and over'>18 and Over</option>
         </select>
         
-        <label>Cost</label>
+        <label>COST</label>
           <input
             placeholder='$-'
             name='cost'
@@ -63,8 +68,9 @@ const EventForm = (props) => {
         <br/>
         
         <div className='location'>
-        <label>Location: </label>
+        <label>LOCATION: </label>
           <input
+            className='location-input'
             placeholder='location'
             name='location'
             value={props.event.location}
@@ -73,8 +79,9 @@ const EventForm = (props) => {
         <br/>
         
         <div className='details'>
-        <label>Details: </label>
+        <label>DETAILS: </label>
           <input
+            className='details-input'
             placeholder='event details'
             name='details'
             value={props.event.details}
@@ -82,9 +89,10 @@ const EventForm = (props) => {
         </div>
         <br/>
 
-        <button type='submit'>Submit</button>
+        <button className='button' type='submit'>Submit</button>
       </form>
-    </div>
+      </div>
+      </Layout>
   )
 }
 
