@@ -1,6 +1,39 @@
-.nav {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 70px;
   background-color: #83c5be;
+  padding: 20px 75px;
+  font-family: 'Roboto', sans-serif;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.logo {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+
+}
+
+a {
+  color: #006D77;
+}
+
 a:visited {
-  color: #006077;
+  color: #006D77;
 }

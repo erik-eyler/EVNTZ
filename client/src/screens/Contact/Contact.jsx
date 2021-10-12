@@ -16,10 +16,10 @@ const Contact = () => {
             <img src="" alt="" className="contact-image" />
             <p>Breck Zeyer</p>
             <div>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://www.linkedin.com/in/breck-zeyer-ab71ab34/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Breck Zeyer linkedIn" />
               </a>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://github.com/BreckZ" rel="noreferrer noopener">
                 <img className="social-bug" src={gitHubBug} alt="Breck Zeyer GitHub" />
               </a>
             </div>
@@ -38,12 +38,12 @@ const Contact = () => {
           </div>
           <div className="contact-card">
             <img src="" alt="" className="contact-image" />
-            <p>Grecia Castillo</p>rel="noreferrer noopener"
+            <p>Grecia Castillo</p>
             <div>
               <a href="" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Grecia Castillo linkedIn" />
               </a>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://github.com/greciacas" rel="noreferrer noopener">
                 <img className="social-bug" src={gitHubBug} alt="Grecia Castillo GitHub" />
               </a>
             </div>
@@ -52,7 +52,7 @@ const Contact = () => {
             <img src="" alt="" className="contact-image" />
             <p>Erik Eyler</p>
             <div>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://www.linkedin.com/in/erik-eyler/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Erik Eyler linkedIn" />
               </a>
               <a href="https://github.com/erik-eyler" rel="noreferrer noopener">
