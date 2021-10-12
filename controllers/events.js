@@ -13,7 +13,7 @@ export const getEvents = async (req, res) => {
 export const getEvent = async (req, res) => {
   try {
     const { id } = req.params;
-    const event = await Event.findById(id).populate("userId");
+    const event = await Event.findById(id) 
     if (event) {
       return res.json(event);
     }
