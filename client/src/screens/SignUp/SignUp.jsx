@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./SignUp.css";
 import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -64,8 +65,9 @@ const SignUp = (props) => {
     password,
     passwordConfirmation,
   } = form;
-  console.log(props);
+  
   return (
+    <Layout>
     <div className="form-container">
       <h3>Sign Up</h3>
       <form onSubmit={onSignUp}>
@@ -125,7 +127,8 @@ const SignUp = (props) => {
         />
         {renderError()}
       </form>
-    </div>
+      </div>
+      </Layout>
   );
 };
 
