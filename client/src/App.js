@@ -25,14 +25,6 @@ const App = () => {
           <Events />
         </Route>
 
-        <Route exact path="/events/:id">
-          <EventDetail />
-        </Route>
-
-        <Route exact path="/events/:id/edit">
-          <EventEdit />
-        </Route>
-
         <Route exact path="/sign-in">
           <SignIn />
         </Route>
@@ -44,6 +36,15 @@ const App = () => {
         <Route exact path="/contact">
           <Contact />
         </Route>
+
+        <Route exact path="/events/:id/edit">
+          <EventEdit />
+        </Route>
+
+        <Route exact path="/events/:id">
+          <EventDetail />
+        </Route>
+
       </Switch>
     </div>
   );

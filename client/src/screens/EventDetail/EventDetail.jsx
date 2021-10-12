@@ -15,26 +15,27 @@ const EventDetail = (props) => {
     }
     fetchEvent()
   }, [id])
-
+ 
+  console.log(event);
   if (!isLoaded) {
     return <h1>Loading...</h1>
   }
 
   return (
     <div>
-      <img src={event.imgUrl} alt={event.title} />
-      <div>{event.title}</div>
-      <div>{event.date}</div>
-      <div>{event.startTime}</div>
-      <div>{event.endTime}</div>
-      <div>{event.ageGroup}</div>
-      <div>{event.cost}</div>
-      <div>{event.location}</div>
-      <div>{event.details}</div>
-      <Link to={`/events/${event._id}/edit`}>
+      <img src={event?.imgUrl} alt={event?.title} />
+      <div>{event?.title}</div>
+      <div>{event?.date}</div>
+      <div>{event?.startTime}</div>
+      <div>{event?.endTime}</div>
+      <div>{event?.ageGroup}</div>
+      <div>{event?.cost}</div>
+      <div>{event?.location}</div>
+      <div>{event?.details}</div>
+      <Link to={`/events/${event?._id}/edit`}>
         Edit
       </Link>
-      <button onClick={() => deleteEvent(event._id)}>
+      <button onClick={() => deleteEvent(event?._id)}>
         Delete
       </button>
     </div>
