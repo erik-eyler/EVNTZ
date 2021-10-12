@@ -50,7 +50,8 @@ const App = () => {
         </Route>
 
         <Route exact path="/events/:id/edit">
-          {user ? <EventEdit user={user} /> : <Redirect to="/" />}
+          {/* {user ? <EventEdit user={user} /> : <Redirect to="/" />} */}
+          <EventEdit />
         </Route>
 
         <Route exact path="/events/:id">
