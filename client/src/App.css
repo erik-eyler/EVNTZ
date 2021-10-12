@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EDF6F9;
+}
+
 .App {
   text-align: center;
+  position: relative;
+  min-height: 100vh;
 }
+
 a {
   text-decoration: none;
 }

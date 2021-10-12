@@ -1,0 +1,22 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  border: 1px solid gray;
+  width: 240px;
+  height: 200px;
+  margin: 20px;
+}
+
+.contact-image {
+  width: 200px;
+  height: auto;
+}
+
+img.social-bug {
+  height: 35px;
+  width: auto;
+  margin: 10px;
+}
