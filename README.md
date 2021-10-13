@@ -21,9 +21,9 @@ Events Schema
   title: {type: String, required: true},
   cost: {type: Decimal128, required: false},
   details: {type: String, required: true},
-  ageGroup: {type: String, enum: ["All Ages", "18 and over", "16 and over"], required: true}
+  ageGroup: {type: String, required: true}
 }
-//postMPV date: {type: Date, required: true} --> convert Date to string we need per industry convention
+
 ```
 
 User Schema
@@ -39,8 +39,8 @@ User Schema
 
 ## Wireframes
 
-![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home%20(1).png)
-![Event Details](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Event%20Details.png)
+![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home%20v.101121.png)
+![Event Details](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Event%20Details%20v.101121.png)
 ![Create Event](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Create%20Event%20(1).png)
 ![Login](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Log%20in.png)
 
