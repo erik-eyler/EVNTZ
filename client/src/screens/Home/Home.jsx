@@ -18,6 +18,7 @@ const Home = (props) => {
     fetchEvents();
   }, []);
 
+  // ------------------ middle section of the home page --------------------
   const branding = [
     { title: "Sights", description: "Lights, Camera, Action! Enjoy family friendly films in the park during the spring and summer months. Love activities? We have plenty of those as well! Join your neighbors for crafts, scavenger hunts and seasonal pumpkin carving."},
     { title: "Sounds", description: "Music brings people together, and we have plenty of it! Check out our music events from summer concert series to the Newcastle Favorite Holiday Stroll featuring our own Newcastle Schools Music Department musicians from grade 4 - 12."},
@@ -33,6 +34,7 @@ const Home = (props) => {
     )
   })
 
+  // ---------------- upcoming events, bottom home ------------------------
   const cards = events.map((event, index) => index < 4 ? 
     <EventCard
       key={index}
@@ -51,9 +53,8 @@ const Home = (props) => {
       <div>
         <div className="hero">
           <div className="hero-text">
-            <h1 className="hero-title">Connection, Community</h1>
-            <br/>
-            <p className="p-tag">
+            <h1 className="hero-title">Connection, <br/>Community.</h1>
+            <p className="hero-description">
               Join neighbors, family and friends at one of our fun and engaging
               events for the residents of Newcastle, NJ.
             </p>

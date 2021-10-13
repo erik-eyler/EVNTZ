@@ -2,7 +2,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #83c5be;
@@ -29,9 +28,10 @@ footer {
   margin: 0 auto;
 }
 
-.contact-us {
+footer a.contact-us {
   margin: auto 10px;
   width: 205px;
+  color: #006D77;
 }
 
 p {
