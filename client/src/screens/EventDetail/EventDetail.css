@@ -1,8 +1,77 @@
-.container-div {
-  margin: 5px;
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap'); */
+div .layout-children {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 10em;
 }
 
-.detail-img {
-  height: 200px;
-  width: 200px;
+.event-detail-container {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  background-color: white;
+  padding: 25px;
+}
+
+
+.image-container {
+  width: 100%;
+  
+}
+
+.event-detail-img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.event-detail-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.5;
+  width: 50%;
+  margin-right: 5em;
+}
+
+.content-title {
+  font-size: 36px;
+  padding: 5px;
+}
+
+.content-bold {
+  font-weight: bold;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.content-regular {
+  font-weight: normal;
+  word-spacing: 2px;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.update-button {
+  display: block;
+  height: 45px;
+  width: 150px;
+  background-color: #ffddd2;
+  border: 1px solid #E29578;
+  color: #E29578;
+  font-weight: bold;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
