@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  margin: 0px 70px;
+}
+
+.hero-text {
+  text-align: left;
+  width: 35%;
+}
+
+.hero-title {
+}
+
+.p-tag {
+  margin: 0px 0px 20px;
+}
+
+.view-events {
+  padding: 10px 30px;
+  box-shadow: 0px 1px 3px 1px grey;
+}
+
+.img-container {
+}
+
+.hero-img {
+  width: 25em;
+  height: auto;
+}
+
+.branding {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.branding-item {
+  text-align: left;
+  margin: 0px 30px;
+}
+
+.heading {
+  font-size: 1.5em;
+  margin: 0px 0px 20px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.875em;
+  margin: 0px;
+  font-weight: 400;
+}
+
+h4 {
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards {
+  display: flex;
+  padding-bottom: 150px;
+}

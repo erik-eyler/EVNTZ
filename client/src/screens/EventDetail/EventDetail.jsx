@@ -34,7 +34,7 @@ const EventDetail = (props) => {
   return (
     <Layout>
       <div className="container-div">
-        <img src={event?.imgUrl} alt={event?.title} />
+        <img className="detail-img" src={event?.imgUrl} alt={event?.title} />
         <div>{event?.title}</div>
         <div>{event?.date}</div>
         <div>{event?.startTime}</div>
