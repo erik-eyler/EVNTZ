@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import EventCard from "../../components/EventCard/EventCard";
 import { getEvents } from "../../services/events";
+import './Home.css';
 
 const Home = (props) => {
   const [events, setEvents] = useState([]);
@@ -25,7 +26,7 @@ const Home = (props) => {
 
   const displayBranding =  branding.map((item, index) => {
     return (
-      <div key={index}>
+      <div className="branding-item" key={index}>
         <h3 className="heading">{item.title}</h3>
         <p className="description">{item.description}</p>
       </div>
@@ -48,10 +49,11 @@ const Home = (props) => {
   return (
     <Layout user={props.user}>
       <div>
-        <div>
+        <div className="hero">
           <div className="hero-text">
-            <h1>Connection, Community</h1>
-            <p>
+            <h1 className="hero-title">Connection, Community</h1>
+            <br/>
+            <p className="p-tag">
               Join neighbors, family and friends at one of our fun and engaging
               events for the residents of Newcastle, NJ.
             </p>
@@ -59,18 +61,20 @@ const Home = (props) => {
               <button className="view-events">View Events</button>
             </Link>
           </div>
-          <div className="hero-img">
-            <img
+          <div className="img-container">
+            <img className="hero-img"
               src="https://images.unsplash.com/photo-1517456793572-1d8efd6dc135?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80"
               alt="90s Dance Party by Samantha Gades on Unsplash"
             />
           </div>
         </div>
         <hr />
-        <div>{displayBranding}</div>
+        <div className="branding">{displayBranding}</div>
         <hr />
         <h4>Upcoming Events</h4>
-        <div>{cards}</div>
+        <div className="cards-container">
+          <div className="cards">{cards}</div>
+        </div>
       </div>
     </Layout>
   );
