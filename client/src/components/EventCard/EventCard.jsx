@@ -7,9 +7,9 @@ const EventCard = (props) => {
     <div className="event-card">
       <Link className="card" to={`/events/${props.id}`}>
         <img src={props.img} alt={props.title} className="card-image"/>
-        <p>{props.title}</p>
-        <p>{props.date}</p>
-        <p>{props.startTime} - {props.endTime}</p>
+        <p className="event-card-title">{props.title}</p>
+        <p className="event-card-date">{props.date}</p>
+        <p className="event-card-time">{props.startTime} - {props.endTime}</p>
         
       </Link>
     </div>
