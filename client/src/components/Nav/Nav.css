@@ -27,17 +27,41 @@ nav a.logo {
 
 .nav-right {
   display: flex;
-  justify-content: space-around;
-  width: 30%;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 60%;
   color: #006D77;
+  
 }
 
 nav a.link {
   color: #006D77;
   text-transform: uppercase;
+  margin: 0 20px;
 }
 
 a:visited, 
 a:active {
   color: #006D77;
+}
+
+div.welcome {
+  text-align: left;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 900px){
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px 20px;
+  }
+  nav a.logo {
+    font-size: 2.5em;
+  }
+  .nav-right {
+    display: none;
+  }
 }

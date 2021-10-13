@@ -10,9 +10,11 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* flex-wrap: wrap; */
   /* height: 300px; */
   height: 60%;
-  margin: 0px 70px;
+  margin: 0 10%;
+  /* max-width: 80%; */
 }
 
 .hero-text {
@@ -32,17 +34,27 @@ hr {
   margin: 0px 30px 40px 0px;
 }
 
-.view-events {
+button.view-events {
   padding: 10px 30px;
-  box-shadow: 0px 1px 3px 1px grey;
+  box-shadow: 0 3px 5px gray;
   border-radius: 5px;
   border: 1px solid #e29578;
   background-color: #ffddd2;
   color: #e29578;
+  /* transition: all .1s; */
+}
+
+/* button.view-events:hover {
+  transform: scale(1.01);
+} */
+
+button.view-events:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
 
 .hero-img {
-  width: 45em;
+  width: 80%;
   height: auto;
   padding: 50px 0;
 }
@@ -50,6 +62,7 @@ hr {
 /* ------------------ branding middle section 2 ------------------- */
 .branding {
   display: flex;
+  /* flex-wrap: wrap; */
   margin: 40px 100px;
 }
 
@@ -79,10 +92,64 @@ h4 {
 /* ------------------ upcoming events, section 3 ------------------ */
 .card-container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  
+
 }
 
 .cards {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-bottom: 150px;
+}
+
+@media screen and (max-width: 1024px){
+  .hero-title {
+    line-height: 1.5em;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .hero-description {
+    margin: 0px 20px 20px 0px;
+  }
+  .branding {
+    margin: 30px 50px;
+  }
+  .branding-item {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .hero-text {
+    width: 70%;
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
+  .hero-title {
+    line-height: 1.4em;
+    font-size: 1.75em;
+    margin-top: 10px;
+  }
+  .hero-description {
+    margin: 0px 5px 20px 0px;
+  }
+  .branding {
+    margin: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 675px){
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .branding {
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+  }
+  .branding-item {
+    margin: 20px auto;
+  }
 }
