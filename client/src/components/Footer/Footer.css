@@ -29,9 +29,10 @@ footer {
   margin: 0 auto;
 }
 
-.contact-us {
+footer a.contact-us {
   margin: auto 10px;
   width: 205px;
+  color: #006D77;
 }
 
 p {
