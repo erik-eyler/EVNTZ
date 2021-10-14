@@ -1,10 +1,8 @@
-
-
 hr {
   width: 95%;
   border: none;
   height: 1px;
-  background-color: #006D77;
+  background-color: #006d77;
 }
 
 /* ---------------- hero styling, section 1 ------------------ */
@@ -24,7 +22,7 @@ hr {
 .hero-title {
   text-transform: uppercase;
   line-height: 1.5em;
-  color: #006D77;
+  color: #006d77;
   font-size: 3em;
   font-weight: 700;
 }
@@ -67,14 +65,13 @@ hr {
 .upcoming {
   display: flex;
   text-align: left;
-  color: #006D77;
+  color: #006d77;
   text-transform: uppercase;
-  margin-left: 2.5%; 
+  margin-left: 2.5%;
 }
 
 .card-container {
   display: flex;
- 
 }
 
 .cards {
@@ -84,9 +81,10 @@ hr {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 50px;
+  /* overflow: scroll; */
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .hero-title {
     line-height: 1.5em;
     font-size: 2em;
@@ -103,7 +101,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .hero-text {
     width: 70%;
     margin-bottom: 30px;
@@ -123,7 +121,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 675px){
+@media screen and (max-width: 675px) {
   .hero {
     flex-direction: column-reverse;
   }
