@@ -12,7 +12,8 @@ a {
 
 .event-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 2em;
+  margin: 2em 0;
+  min-height: fit-content;
   font-size: 12px;
   text-decoration: none;
   /* width: 30%;
@@ -25,14 +26,15 @@ a {
   height: 200px; */
   width: 90%;
   height: 90%;
-  margin: 1.5em;
+  margin: 1em auto;
   max-width: 30vh;
   max-height: 30vh;
 }
-/* .event-info-container {
-  width: 80%;
-  height: 30%;
-} */
+.event-info-container {
+  min-width: 200px;
+  min-height: 100px;
+  margin: 0 auto;
+}
 .event-card-title {
   font-weight: bold;
 }
