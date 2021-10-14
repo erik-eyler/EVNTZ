@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import EventCard from "../../components/EventCard/EventCard";
+import Button from "../../components/Button/Button";
 import { getEvents } from "../../services/events";
 import './Home.css';
 
@@ -59,7 +60,8 @@ const Home = (props) => {
               events for the residents of Newcastle, NJ.
             </p>
             <Link to="/events">
-              <button className="view-events">View Events</button>
+              <Button name="View Events" />
+              {/* <button className="view-events">View Events</button> */}
             </Link>
           </div>
           <div className="img-container">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Button from "../../components/Button/Button";
 import "./SignIn.css"
 
 const SignIn = (props) => {
@@ -93,7 +94,7 @@ const SignIn = (props) => {
             </div>
             {/* {toggle ? <div className="danger">Incorrect email or password</div> : null} */}
             
-            <button className="user-btn" type="submit">Log In</button>
+            <Button name="Sign In" />
             <br/>
             {renderError()}
           </form>

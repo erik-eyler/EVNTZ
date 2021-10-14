@@ -47,22 +47,6 @@
   margin: 50px 0;
 }
 
-button.user-btn {
-  padding: 10px 30px;
-  box-shadow: 0 3px 5px gray;
-  border-radius: 5px;
-  border: 1px solid #e29578;
-  background-color: #ffddd2;
-  color: #e29578;
-  width: 60%;
-  margin: 20px 0;
-}
-
-button.user-btn:active {
-  transform: translateY(2px);
-  box-shadow: none;
-}
-
 .danger {
   color: red;
 }
