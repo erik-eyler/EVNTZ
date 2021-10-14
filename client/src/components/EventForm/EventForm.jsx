@@ -1,4 +1,3 @@
-import Layout from "../Layout/Layout";
 import "../EventForm/EventForm.css";
 import { useState } from "react";
 
@@ -27,6 +26,25 @@ const EventForm = (props) => {
   };
 
   return (
+    <>
+      <div className="event-img">
+        <h3>SUBMIT YOUR EVENT</h3>
+        {loading ? <h2>Loading Image...</h2> : <img src={image} />}
+      </div>
+      <div className="form-container">
+        <form onSubmit={props.handleSubmit}>
+          <div className="form">
+            <div className="title">
+              <label>TITLE</label>
+              <input
+                className="title-input"
+                placeholder="title"
+                name="title"
+                value={props.event.title}
+                onChange={props.handleChange}
+              />
+            </div>
+            <br />
     <Layout>
       <div className="div">
         <div className="event-img">
@@ -158,7 +176,7 @@ const EventForm = (props) => {
           </form>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
