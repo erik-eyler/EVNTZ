@@ -40,15 +40,6 @@ const SignIn = (props) => {
     }
   };
 
-  // const submitForm = (event) => {
-  //   event.preventDefault();
-  //   if(form.password !== form.passwordConfirmation){
-  //     setToggle(true);
-  //   } else {
-  //     onSignIn();
-  //   }
-  // }
-
   const renderError = () => {
     if (form.isError) {
       return (

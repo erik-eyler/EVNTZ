@@ -1,6 +1,3 @@
-div.contact {
-  height: 100vh;
-}
 
 .project-description {
   line-height: 2em;
@@ -9,6 +6,7 @@ div.contact {
 .contact-section {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -20,11 +18,6 @@ div.contact {
   margin: 40px;
 }
 
-/* .contact-image {
-  width: 200px;
-  height: auto;
-} */
-
 .team-name {
   padding: 20px 0;
 }
@@ -32,4 +25,9 @@ img.social-bug {
   height: 35px;
   width: auto;
   margin: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+
 }
