@@ -1,9 +1,9 @@
-h3 {
+.div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0px 75px;
+  height: 100vh;
 }
 
 input {
@@ -19,10 +19,22 @@ input {
   justify-content: center;
 }
 
-.form {
+.event-img {
+  margin: 0px 65px;
+  padding-bottom: 100px;
+  margin: 0px 160px;
+  color: #006d77;
+  font-weight: bold;
 }
 
-.event-img {
+.h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.image-of-event {
+  width: 300px;
+  height: 400px;
 }
 
 .file {
@@ -34,10 +46,8 @@ input {
 }
 
 .title,
-.date-time,
 .location,
-.details,
-.event-img {
+.details {
   text-align: left;
   color: #006d77;
   font-weight: bold;
@@ -50,19 +60,57 @@ input {
   padding: 10px 10px;
 }
 
-.age-cost {
+.three-divs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.date-time {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #006d77;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.date-input {
+  width: 80%;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.start-input {
+  width: 60%;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.end-input {
+  width: 60%;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.age-cost {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   text-align: left;
   color: #006d77;
   font-weight: bold;
   padding: 15px;
 }
 
-.age-input,
+.age-input {
+  width: 97%;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
 .cost-input {
-  width: 20%;
-  padding: 2px;
+  width: 97%;
+  margin-top: 9px;
+  padding: 5px 10px;
 }
 
 .details-input {
@@ -71,12 +119,14 @@ input {
 }
 
 .button {
-  background-color: #e29578;
-  padding: 7px 50px;
-  border-radius: 6px;
+  background-color: #ffddd2;
+  color: #e29578;
+  padding: 10px 40px;
+  box-shadow: 0px 3px 5px grey;
+  border-radius: 5px;
+  border: 1px solid #e29578;
   cursor: pointer;
 }
 
-.button:hover {
-  box-shadow: 0px 0px 1px 1px rgb(252, 168, 138);
+@media (max-width: 900px) {
 }
