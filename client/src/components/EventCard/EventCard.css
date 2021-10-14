@@ -1,8 +1,3 @@
-.card-image {
-  width: 200px;
-  height: 200px;
-  margin: 1.5em;
-}
 a:visited {
   color: black;
 }
@@ -10,6 +5,9 @@ a:visited {
 a {
   color: black;
 }
+/* img {
+  max-width: 100%;
+} */
 /* make 4 column max, go down to 1 on screen */
 
 .event-card {
@@ -17,7 +15,24 @@ a {
   margin: 2em;
   font-size: 12px;
   text-decoration: none;
+  /* width: 30%;
+  flex-grow: 1;
+  height: 40vh; */
+  flex: 0 1 30%;
 }
+.event-card-image {
+  /* width: 200px;
+  height: 200px; */
+  width: 90%;
+  height: 90%;
+  margin: 1.5em;
+  max-width: 30vh;
+  max-height: 30vh;
+}
+/* .event-info-container {
+  width: 80%;
+  height: 30%;
+} */
 .event-card-title {
   font-weight: bold;
 }
