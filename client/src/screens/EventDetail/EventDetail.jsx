@@ -33,7 +33,7 @@ const EventDetail = (props) => {
   };
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="event-detail-wrapper">
         <div className="event-detail-container">
           <div className="image-container">

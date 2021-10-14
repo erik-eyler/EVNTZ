@@ -27,7 +27,7 @@ const EventForm = (props) => {
   };
 
   return (
-    <Layout>
+    <>
       <div className="event-img">
         <h3>SUBMIT YOUR EVENT</h3>
         {loading ? <h2>Loading Image...</h2> : <img src={image} />}
@@ -142,7 +142,7 @@ const EventForm = (props) => {
           </button>
         </form>
       </div>
-    </Layout>
+    </>
   );
 };
 
