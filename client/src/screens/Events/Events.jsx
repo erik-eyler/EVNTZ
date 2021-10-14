@@ -5,7 +5,7 @@ import { getEvents } from "../../services/events";
 import './Events.css'
 
 
-const Events = () => {
+const Events = (props) => {
   const [events, setEvents] = useState([])
   const [loading, setLoading] = useState(true);
 
@@ -33,7 +33,7 @@ const Events = () => {
   if (loading) <div>Loading...</div>;
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="events-container">
         {cards}
       </div>
