@@ -6,15 +6,16 @@ import gitHubBug from "../../assets/GitHub-Mark-120px-plus.png"
 const Contact = () => {
   return (
     <Layout>
-      <div>
-        <div>
+      <div className="contact">
+        <div className="contact-header">
           <h1>Meet the Team</h1>
-          <p>The EVNTZ APP ETC</p>
+          <p className="project-description">The EVNTZ application was built during a seven day design sprint by the team members listed below.<br/>
+          The technologies used for this application include: React, Express, Node.js, MongoDB, Mongoose, CSS, bcrypt, and JWT</p>
         </div>
         <div className="contact-section">
           <div className="contact-card">
             <img src="" alt="" className="contact-image" />
-            <p>Breck Zeyer</p>
+            <p className="team-name">Breck Zeyer</p>
             <div>
               <a href="https://www.linkedin.com/in/breck-zeyer-ab71ab34/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Breck Zeyer linkedIn" />
@@ -26,7 +27,7 @@ const Contact = () => {
           </div>
           <div className="contact-card">
             <img src="" alt="" className="contact-image" />
-            <p>Katherine Boates-Goudreau</p>
+            <p className="team-name">Katherine Boates-Goudreau</p>
             <div>
               <a href="https://www.linkedin.com/in/katherine-boates-goudreau/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Katherine Boates-Goudreau linkedIn" />
@@ -38,7 +39,7 @@ const Contact = () => {
           </div>
           <div className="contact-card">
             <img src="" alt="" className="contact-image" />
-            <p>Grecia Castillo</p>
+            <p className="team-name">Grecia Castillo</p>
             <div>
               <a href="" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Grecia Castillo linkedIn" />
@@ -50,7 +51,7 @@ const Contact = () => {
           </div>
           <div className="contact-card">
             <img src="" alt="" className="contact-image" />
-            <p>Erik Eyler</p>
+            <p className="team-name">Erik Eyler</p>
             <div>
               <a href="https://www.linkedin.com/in/erik-eyler/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Erik Eyler linkedIn" />
