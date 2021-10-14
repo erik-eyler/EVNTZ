@@ -33,21 +33,6 @@ hr {
   margin: 0px 30px 40px 0px;
 }
 
-button.view-events {
-  padding: 10px 30px;
-  box-shadow: 0 3px 5px gray;
-  border-radius: 5px;
-  border: 1px solid #e29578;
-  background-color: #ffddd2;
-  color: #e29578;
-  /* transition: all .1s; */
-}
-
-button.view-events:active {
-  transform: translateY(2px);
-  box-shadow: none;
-}
-
 .hero-img {
   width: 80%;
   height: auto;

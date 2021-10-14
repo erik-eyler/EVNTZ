@@ -3,6 +3,7 @@ import "./SignUp.css";
 import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Button from "../../components/Button/Button";
 
 const SignUp = (props) => {
   const [toggle, setToggle] = useState(false);
@@ -146,7 +147,7 @@ const SignUp = (props) => {
               />
             </div>
             {toggle ? <div className="danger">Passwords do not match</div> : null}
-            <button className="user-btn" type="submit">Sign Up</button>
+            <Button name="Sign Up" />
           </form>
         </div>
       </div>
