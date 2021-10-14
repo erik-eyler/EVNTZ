@@ -1,0 +1,45 @@
+/* burger menu idea from: https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/ */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: white;
+  height: 100vh;
+  text-align: left;
+  padding: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.menu-closed {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: white;
+  height: 100vh;
+  text-align: right;
+  padding: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.menu a {
+  padding: 10px 0;
+}
+
+.menu a:hover {
+  color: #83c5be;
+}
+
+@media screen and (max-width: 500){
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const EventCard = (props) => {
+ 
   return (
     <div className="event-card">
       <Link className="card" to={`/events/${props.id}`}>
