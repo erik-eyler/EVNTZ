@@ -1,20 +1,33 @@
+div.contact {
+  height: 100vh;
+}
+
+.project-description {
+  line-height: 2em;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .contact-card {
-  border: 1px solid gray;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 240px;
   height: 200px;
-  margin: 20px;
+  margin: 40px;
 }
 
-.contact-image {
+/* .contact-image {
   width: 200px;
   height: auto;
-}
+} */
 
+.team-name {
+  padding: 20px 0;
+}
 img.social-bug {
   height: 35px;
   width: auto;

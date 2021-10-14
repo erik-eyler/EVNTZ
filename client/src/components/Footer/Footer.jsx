@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <p>Connection. Community.</p>
+        <p className="footer-branding">Connection. Community.</p>
         <a href="https://github.com/erik-eyler/EVNTZ" className="gitHub-footer" rel="noreferrer noopener">
           <img className="social-bug-footer" src={gitHubBug} alt="EVNTZ GitHub" />
         </a>

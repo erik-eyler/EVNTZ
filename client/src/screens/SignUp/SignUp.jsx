@@ -69,68 +69,88 @@ const SignUp = (props) => {
 
   return (
     <Layout>
-    <div className="form-container">
-      <h3>Sign Up</h3>
-      <form onSubmit={submitForm}>
-        <label>First Name</label>
-        <input
-          required
-          type="text"
-          name="firstName"
-          value={firstName}
-          placeholder="Enter First Name"
-          onChange={handleChange}
-        />
-        <label>Last Name</label>
-        <input
-          required
-          type="text"
-          name="lastName"
-          value={lastName}
-          placeholder="Enter Last Name"
-          onChange={handleChange}
-        />
-        <label>Username</label>
-        <input
-          required
-          type="text"
-          name="username"
-          value={username}
-          placeholder="Enter username"
-          onChange={handleChange}
-        />
-        <label>Email address</label>
-        <input
-          required
-          type="email"
-          name="email"
-          value={email}
-          placeholder="Enter email"
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          name="password"
-          value={password}
-          type="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <label>Password Confirmation</label>
-        <input
-          required
-          name="passwordConfirmation"
-          value={passwordConfirmation}
-          type="password"
-          placeholder="Confirm Password"
-          onChange={handleChange}
-        />
-        {toggle ? <div className="danger">Passwords do not match</div> : null}
-        <button type="submit">Sign Up</button>
-      </form>
+      <div className="authentication-form">
+        <div className="user-form-container sign-up">
+          <h3 className="user-form-heading">Sign Up!</h3>
+          <form onSubmit={submitForm}>
+            <div className="input-group">
+              <label className="user-label">First Name</label>
+              <input
+                className="user-input"
+                required
+                type="text"
+                name="firstName"
+                value={firstName}
+                placeholder="First Name"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-group">
+              <label className="user-label">Last Name</label>
+              <input
+                className="user-input"
+                required
+                type="text"
+                name="lastName"
+                value={lastName}
+                placeholder="Last Name"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-group">
+              <label className="user-label">Username</label>
+              <input
+                className="user-input"
+                required
+                type="text"
+                name="username"
+                value={username}
+                placeholder="Username"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-group">
+              <label className="user-label">Email address</label>
+              <input
+                className="user-input"
+                required
+                type="email"
+                name="email"
+                value={email}
+                placeholder="Email"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-group">
+              <label className="user-label">Password</label>
+              <input
+                className="user-input"
+                required
+                name="password"
+                value={password}
+                type="password"
+                placeholder="Password"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-group">
+              <label className="user-label">Password Confirmation</label>
+              <input
+                className="user-input"
+                required
+                name="passwordConfirmation"
+                value={passwordConfirmation}
+                type="password"
+                placeholder="Confirm Password"
+                onChange={handleChange}
+              />
+            </div>
+            {toggle ? <div className="danger">Passwords do not match</div> : null}
+            <button className="user-btn" type="submit">Sign Up</button>
+          </form>
+        </div>
       </div>
-      </Layout>
+    </Layout>
   );
 };
 
