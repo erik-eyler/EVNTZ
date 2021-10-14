@@ -1,10 +1,11 @@
 button {
-  padding: 10px 30px;
+  padding: 10px 20px;
   box-shadow: 0 3px 5px gray;
   border-radius: 5px;
   border: 1px solid #e29578;
   background-color: #ffddd2;
   color: #e29578;
+  width: 132px;
 }
 
 button:active {
