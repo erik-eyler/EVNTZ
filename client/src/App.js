@@ -55,8 +55,7 @@ const App = () => {
         </Route>
 
         <Route exact path="/events/:id/edit">
-          {/* {user ? <EventEdit user={user} /> : <Redirect to="/" />} */}
-          <EventEdit />
+          {user ? <EventEdit user={user} /> : <Redirect to="/" />}
         </Route>
 
         <Route exact path="/events/:id">

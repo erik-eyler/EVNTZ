@@ -29,12 +29,8 @@ const EventForm = (props) => {
   return (
     <div className="div">
       <div className="event-img">
-        <div className="h3">SUBMIT YOUR EVENT</div>
-        {loading ? (
-          <h2>Loading Image...</h2>
-        ) : (
-          <img className="image-of-event" src={image} />
-        )}
+        <h3>SUBMIT YOUR EVENT</h3>
+        {loading ? <h2>Loading Image...</h2> : <img src={image} />}
       </div>
       <div className="form-container">
         <form onSubmit={props.handleSubmit}>
