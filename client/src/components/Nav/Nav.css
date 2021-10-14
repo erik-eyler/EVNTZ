@@ -48,6 +48,7 @@ a:active {
 div.welcome {
   text-align: left;
   margin-right: 20px;
+  color: #006D77;
 }
 
 @media screen and (max-width: 900px){
@@ -62,6 +63,9 @@ div.welcome {
     font-size: 2.5em;
   }
   .nav-right {
+    display: none;
+  }
+  div.welcome {
     display: none;
   }
 }

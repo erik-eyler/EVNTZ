@@ -29,6 +29,7 @@ a {
   margin: 1em auto;
   max-width: 30vh;
   max-height: 30vh;
+  object-fit: cover;
 }
 .event-info-container {
   min-width: 200px;

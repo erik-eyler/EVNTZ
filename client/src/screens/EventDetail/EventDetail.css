@@ -1,4 +1,5 @@
 .event-detail-wrapper {
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   padding: 30px 0px;

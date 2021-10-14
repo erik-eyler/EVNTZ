@@ -14,7 +14,6 @@ const Contact = () => {
         </div>
         <div className="contact-section">
           <div className="contact-card">
-            <img src="" alt="" className="contact-image" />
             <p className="team-name">Breck Zeyer</p>
             <div>
               <a href="https://www.linkedin.com/in/breck-zeyer-ab71ab34/" rel="noreferrer noopener">
@@ -26,7 +25,6 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-card">
-            <img src="" alt="" className="contact-image" />
             <p className="team-name">Katherine Boates-Goudreau</p>
             <div>
               <a href="https://www.linkedin.com/in/katherine-boates-goudreau/" rel="noreferrer noopener">
@@ -38,7 +36,6 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-card">
-            <img src="" alt="" className="contact-image" />
             <p className="team-name">Grecia Castillo</p>
             <div>
               <a href="" rel="noreferrer noopener">
@@ -50,7 +47,6 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-card">
-            <img src="" alt="" className="contact-image" />
             <p className="team-name">Erik Eyler</p>
             <div>
               <a href="https://www.linkedin.com/in/erik-eyler/" rel="noreferrer noopener">
