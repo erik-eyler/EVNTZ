@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getEvent, deleteEvent } from "../../services/events";
 import { useParams, Link, useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Button from "../../components/Button/Button";
 
 const EventDetail = (props) => {
   const [event, setEvent] = useState(null);
@@ -72,11 +73,13 @@ const EventDetail = (props) => {
             </div>
             <div className="button-container">
               <Link to={`/events/${event?._id}/edit`}>
-                <button className="update-button">Edit Event</button>
+                <Button name={"Edit Event"} className="update-button"></Button>
               </Link>
-              <button className="update-button" onClick={() => handleClick()}>
-                Delete Event
-              </button>
+              <Button
+                name={"Delete Event"}
+                className="update-button"
+                onClick={() => handleClick()}
+              ></Button>
             </div>
           </div>
         </div>
