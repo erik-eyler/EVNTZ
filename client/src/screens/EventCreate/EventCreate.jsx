@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import EventForm from "../../components/EventForm/EventForm";
 import Layout from "../../components/Layout/Layout";
+import "./EventCreate.css"
 
 const EventCreate = () => {
   const history = useHistory();
@@ -37,12 +38,15 @@ const EventCreate = () => {
 
   return (
     <Layout>
+      <div className="event-create-container">
       <EventForm
+        header={"SUBMIT YOUR EVENT"}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         event={event}
         setEvent={setEvent}
       />
+      </div>
     </Layout>
   );
 };

@@ -4,19 +4,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-input {
-  border: white;
-  box-shadow: 0px 1px 1px 2px rgb(210, 207, 207);
-  margin-top: 7px;
-  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .form-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  margin: 100px 0px;
 }
 
 .event-img {
@@ -27,22 +23,19 @@ input {
   font-weight: bold;
 }
 
-.h3 {
-  font-size: 30px;
-  text-align: center;
-}
-
 .image-of-event {
   width: 300px;
   height: 400px;
+  object-fit: cover;
 }
 
 .file {
   font-size: 1em;
   font-weight: 700;
-  width: 42%;
+  width: 60%;
   cursor: pointer;
-  background-color: #e29578;
+  background-color: white;
+  margin: 10px 0px 23px 0px;
 }
 
 .title,
@@ -54,68 +47,113 @@ input {
   padding: 15px;
 }
 
+input {
+  border: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 7px;
+  border-radius: 5px;
+  color: gray;
+}
+
+.age-input {
+  border: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 7px;
+  border-radius: 5px;
+  background-color: white;
+  color: gray;
+}
+
 .title-input,
 .location-input {
   width: 100%;
-  padding: 10px 10px;
-}
-
-.three-divs {
-  display: flex;
-  flex-direction: column;
-}
-
-.date-time {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  color: #006d77;
-  font-weight: bold;
-  text-align: left;
-  margin-left: 15px;
+  box-sizing: border-box;
 }
 
 .date-input {
   width: 80%;
   margin-top: 10px;
   padding: 5px 10px;
+  background-color: white;
 }
 
 .start-input {
-  width: 60%;
+  width: 70%;
   margin-top: 10px;
   padding: 5px 10px;
+  background-color: white;
 }
 
 .end-input {
-  width: 60%;
+  width: 70%;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+}
+
+.age-input {
+  width: 100%;
   margin-top: 10px;
   padding: 5px 10px;
 }
 
+.cost-input {
+  width: 100%;
+  /* margin-top: 9px; */
+  /* padding: 5px 10px; */
+  box-sizing: border-box;
+  height: 39px;
+}
+
+.form-input {
+  padding: 10px;
+}
+
+.details-input {
+  width: 100%;
+  padding: 10px 10px 100px 10px;
+  box-sizing: border-box;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  color: #006d77;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 15px;
+  padding: 15px 0px;
+}
+
+.end-time, .start-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
 .age-cost {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(2, 1fr); */
   text-align: left;
   color: #006d77;
   font-weight: bold;
   padding: 15px;
 }
 
-.age-input {
-  width: 97%;
-  margin-top: 10px;
-  padding: 5px 10px;
-}
 
-.cost-input {
-  width: 97%;
-  margin-top: 9px;
-  padding: 5px 10px;
-}
+.cloud-upload {
+  hover:bg-gray-700 
+  mt-4 
+  border-2 
+  rounded-md 
+  text-center 
+  flex 
+  flex-col 
+  items-center 
+  border-gray-200 
+  px-2
 
-.details-input {
-  width: 100%;
-  padding: 50px 10px;
 }
 
 @media (max-width: 900px) {
