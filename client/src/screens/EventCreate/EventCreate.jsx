@@ -2,11 +2,10 @@ import { createEvent } from "../../services/events";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import EventForm from "../../components/EventForm/EventForm";
+import Layout from "../../components/Layout/Layout";
 
 const EventCreate = () => {
   const history = useHistory();
-  // const [loading, setLoading] = useState(false);
-  // const [image, setImage] = useState("");
 
   const [event, setEvent] = useState({
     date: "",
@@ -36,43 +35,15 @@ const EventCreate = () => {
     history.push("/events");
   };
 
-  // const uploadImage = async (e) => {
-  //   const files = e.target.files;
-  //   const data = new FormData();
-  //   data.append("file", files[0]);
-  //   data.append("upload_preset", "testing");
-  //   setLoading(true);
-
-  //   const res = await fetch(
-  //     "https://api.cloudinary.com/v1_1/dehiekpya/image/upload",
-  //     {
-  //       method: "POST",
-  //       body: data,
-  //     }
-  //   );
-
-  //   const file = await res.json();
-  //   setImage(file.secure_url);
-  //   setLoading(false);
-  // };
-
   return (
-    <div>
+    <Layout>
       <EventForm
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         event={event}
         setEvent={setEvent}
       />
-      {/* <div className="event-img">
-        <div className="h3">SUBMIT YOUR EVENT</div>
-        {loading ? (
-          <h2>Loading Image...</h2>
-        ) : (
-          <img className="image-of-event" src={image} />
-        )}
-      </div> */}
-    </div>
+    </Layout>
   );
 };
 
