@@ -1,6 +1,6 @@
-import Layout from "../Layout/Layout";
 import "../EventForm/EventForm.css";
 import { useState } from "react";
+import Button from "../Button/Button";
 
 const EventForm = (props) => {
   const [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ const EventForm = (props) => {
   };
 
   return (
-    <Layout>
+    <div className="div">
       <div className="event-img">
         <h3>SUBMIT YOUR EVENT</h3>
         {loading ? <h2>Loading Image...</h2> : <img src={image} />}
@@ -48,61 +48,71 @@ const EventForm = (props) => {
             <br />
 
             <div className="date-time">
-              <label>DATE</label>
-              <input
-                className="date-input"
-                type="date"
-                min="2021-10-13"
-                placeholder="MM/DD/YYYY"
-                name="date"
-                value={props.event.date}
-                onChange={props.handleChange}
-              />
+              <div className="date">
+                <label>DATE</label>
+                <input
+                  className="date-input"
+                  type="date"
+                  min="2021-10-13"
+                  placeholder="MM/DD/YYYY"
+                  name="date"
+                  value={props.event.date}
+                  onChange={props.handleChange}
+                />
+              </div>
 
-              <label>START TME</label>
-              <input
-                className="start-input"
-                type="time"
-                placeholder="--"
-                name="startTime"
-                value={props.event.startTime}
-                onChange={props.handleChange}
-              />
+              <div className="start-time">
+                <label>START TME</label>
+                <input
+                  className="start-input"
+                  type="time"
+                  placeholder="--"
+                  name="startTime"
+                  value={props.event.startTime}
+                  onChange={props.handleChange}
+                />
+              </div>
 
-              <label>END TIME</label>
-              <input
-                className="end-input"
-                type="time"
-                placeholder="--"
-                name="endTime"
-                value={props.event.endTime}
-                onChange={props.handleChange}
-              />
+              <div className="end-time">
+                <label>END TIME</label>
+                <input
+                  className="end-input"
+                  type="time"
+                  placeholder="--"
+                  name="endTime"
+                  value={props.event.endTime}
+                  onChange={props.handleChange}
+                />
+              </div>
             </div>
             <br />
 
             <div className="age-cost">
-              <label>AGE GROUP</label>
-              <select
-                className="age-input"
-                placeholder="Select Age Group"
-                name="ageGroup"
-                value={props.event.ageGroup}
-                onChange={props.handleChange}
-              >
-                <option value="All Ages">All Ages</option>
-                <option value="16 and over">16 and Over</option>
-                <option value="18 and over">18 and Over</option>
-              </select>
+              <div className="age">
+                <label>AGE GROUP</label>
+                <select
+                  className="age-input"
+                  placeholder="Select Age Group"
+                  name="ageGroup"
+                  value={props.event.ageGroup}
+                  onChange={props.handleChange}
+                >
+                  <option value="All Ages">All Ages</option>
+                  <option value="16 and over">16 and Over</option>
+                  <option value="18 and over">18 and Over</option>
+                </select>
+              </div>
 
-              <label>COST</label>
-              <input
-                className="cost-input"
-                placeholder="$-"
-                name="cost"
-                value={props.event.cost}
-                onChange={props.handleChange}
-              />
+              <div className="cost">
+                <label>COST</label>
+                <input
+                  className="cost-input"
+                  placeholder="-$-"
+                  name="cost"
+                  value={props.event.cost}
+                  onChange={props.handleChange}
+                />
+              </div>
             </div>
             <br />
 
@@ -137,12 +147,10 @@ const EventForm = (props) => {
             />
           </div>
           <br />
-          <button className="button" type="submit">
-            Submit
-          </button>
+          <Button name="Submit" />
         </form>
       </div>
-    </Layout>
+    </div>
   );
 };
 
