@@ -1,4 +1,3 @@
-import Layout from "../Layout/Layout";
 import "../EventForm/EventForm.css";
 import { useState } from "react";
 

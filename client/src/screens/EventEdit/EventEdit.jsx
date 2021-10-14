@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import EventForm from "../../components/EventForm/EventForm";
 import { getEvent, updateEvent } from "../../services/events";
 import Layout from "../../components/Layout/Layout";
+import "./EventEdit.css"
 
 const EventEdit = (props) => {
   const [event, setEvent] = useState({
@@ -47,6 +48,7 @@ const EventEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div>
+        <h2 className="event-edit-header">EDIT YOUR EVENT</h2>
         <EventForm
           handleChange={handleChange}
           handleSubmit={handleSubmit}
