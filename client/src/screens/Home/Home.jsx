@@ -72,7 +72,7 @@ const Home = (props) => {
         <hr />
         <div className="branding">{displayBranding}</div>
         <hr />
-        <h4>Upcoming Events</h4>
+        <h4 className="upcoming">Upcoming Events</h4>
         <div className="cards-container">
           <div className="cards">{cards}</div>
         </div>

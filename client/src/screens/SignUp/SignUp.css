@@ -1,3 +1,16 @@
-.danger {
-  color: red;
+/* --------- most classes also used and pulled in from SignUp.css -------------- */
+
+div.user-form-container.sign-up {
+  width: 350px;
+  height: 975px;
+  /* margin: 80px auto; */
+  margin-bottom: 100px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 70px;
 }
+
+div.input-group {
+  margin: 40px 0;
+}
+

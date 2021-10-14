@@ -1,5 +1,7 @@
+
+
 hr {
-  width: 90%;
+  width: 95%;
   border: none;
   height: 1px;
   background-color: #006D77;
@@ -10,11 +12,8 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* height: 300px; */
   height: 60%;
   margin: 0 10%;
-  /* max-width: 80%; */
 }
 
 .hero-text {
@@ -43,10 +42,6 @@ button.view-events {
   color: #e29578;
   /* transition: all .1s; */
 }
-
-/* button.view-events:hover {
-  transform: scale(1.01);
-} */
 
 button.view-events:active {
   transform: translateY(2px);
@@ -83,25 +78,27 @@ button.view-events:active {
   font-weight: 400;
 }
 
-h4 {
+/* ------------------ upcoming events, section 3 ------------------ */
+.upcoming {
   display: flex;
   text-align: left;
-  margin-left: 25px;
+  color: #006D77;
+  text-transform: uppercase;
+  margin-left: 2.5%; 
 }
 
-/* ------------------ upcoming events, section 3 ------------------ */
 .card-container {
   display: flex;
-  /* justify-content: space-around; */
-  
-
+ 
 }
 
 .cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-bottom: 150px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1024px){
@@ -137,6 +134,7 @@ h4 {
   }
   .branding {
     margin: 20px 30px;
+    justify-content: center;
   }
 }
 
@@ -148,8 +146,12 @@ h4 {
     flex-direction: column;
     align-content: center;
     width: 70%;
+    margin: 10px auto;
   }
   .branding-item {
-    margin: 20px auto;
+    margin: 20px 30px;
+  }
+  .heading {
+    justify-content: flex-start;
   }
 }
