@@ -14,7 +14,7 @@ const EventEdit = (props) => {
     title: "",
     cost: "",
     details: "",
-    ageGroup: "All Ages", //needs to be set to all ages by default(dropdown)
+    ageGroup: "All Ages", 
   });
 
   const [isUpdated, setUpdated] = useState(false);

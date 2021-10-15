@@ -1,11 +1,12 @@
 import { createEvent } from "../../services/events";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import EventForm from "../../components/EventForm/EventForm";
 import Layout from "../../components/Layout/Layout";
+import "./EventCreate.css"
 
-const EventCreate = () => {
-  const history = useHistory();
+const EventCreate = (props) => {
+  
 
   const [event, setEvent] = useState({
     date: "",
@@ -32,17 +33,21 @@ const EventCreate = () => {
     e.preventDefault();
     const created = await createEvent(event);
     setIsCreated({ created });
-    history.push("/events");
   };
 
+  if (isCreated) return <Redirect to={`/events`} />
+
   return (
-    <Layout>
+    <Layout user={props.user}>
+      <div className="event-create-container">
       <EventForm
+        header={"SUBMIT YOUR EVENT"}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         event={event}
         setEvent={setEvent}
       />
+      </div>
     </Layout>
   );
 };
