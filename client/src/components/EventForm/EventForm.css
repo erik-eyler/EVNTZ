@@ -133,7 +133,8 @@ input {
   padding: 15px 0px;
 }
 
-.end-time, .start-time {
+.end-time,
+.start-time {
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -149,19 +150,9 @@ input {
   padding: 15px;
 }
 
-
 .cloud-upload {
-  hover:bg-gray-700 
-  mt-4 
-  border-2 
-  rounded-md 
-  text-center 
-  flex 
-  flex-col 
-  items-center 
-  border-gray-200 
-  px-2
-
+  hover: bg-gray-700 mt-4 border-2 rounded-md text-center flex flex-col
+    items-center border-gray-200 px-2;
 }
 
 @media (max-width: 1024px) {
@@ -174,21 +165,19 @@ input {
     padding-bottom: 100px;
     margin: 0px 80px;
   }
-
 }
 
 @media (max-width: 700px) {
   .div {
     flex-direction: column-reverse;
   }
-
 }
 
 @media (max-width: 375px) {
   .div {
     width: 100%;
   }
-  
+
   .mobile-event-header {
     display: block;
     color: #006d77;
@@ -199,8 +188,8 @@ input {
   }
 
   .date-time {
-  flex-direction: column;
-}
+    flex-direction: column;
+  }
 
   .age-cost {
     flex-direction: column;
@@ -210,16 +199,14 @@ input {
     display: block;
   }
 
-
   .date-input,
   .start-input,
   .end-input {
-    width: 88%; 
+    width: 88%;
   }
 
-  
   .start-time,
-  cost  {
+  cost {
     margin: 15px 0px;
     padding: 15px 0px;
   }
@@ -229,7 +216,6 @@ input {
     padding: 15px 0px;
   }
 
-
   .age-cost {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -238,6 +224,4 @@ input {
   .file {
     width: 80%;
   }
-
-
 }
