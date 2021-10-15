@@ -35,7 +35,7 @@ const EventForm = (props) => {
         {loading ? (
           <h2>Loading Image...</h2>
         ) : (
-          <img className="image-of-event" src={image} />
+          <img className="image-of-event" src={image} alt="user event upload"/>
         )}
       </div>
 

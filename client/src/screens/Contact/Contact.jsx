@@ -41,7 +41,9 @@ const Contact = () => {
             <img src="" alt="" className="contact-image" />
             <p className="team-name">Grecia Castillo</p>
             <div>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://www.linkedin.com/in/grecia-castillo-502123223/
+
+" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Grecia Castillo linkedIn" />
               </a>
               <a href="https://github.com/greciacas" rel="noreferrer noopener">
