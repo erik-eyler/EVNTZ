@@ -51,7 +51,8 @@ const Home = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div>
+      <div className="home
+      ">
         <div className="hero">
           <div className="hero-text">
             <h1 className="hero-title">Connection, <br/>Community.</h1>

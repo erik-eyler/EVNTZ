@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import EventForm from "../../components/EventForm/EventForm";
 import Layout from "../../components/Layout/Layout";
-import "./EventCreate.css"
+import "./EventCreate.css";
 
 const EventCreate = (props) => {
-  
+  const [imageUrl, setImageUrl] = useState("");
 
   const [event, setEvent] = useState({
     date: "",
@@ -16,7 +16,8 @@ const EventCreate = (props) => {
     title: "",
     cost: "",
     details: "",
-    ageGroup: "All Ages", //needs to be set to all ages by default(dropdown)
+    ageGroup: "",
+    imgUrl: "",
   });
 
   const [isCreated, setIsCreated] = useState(false);
@@ -31,22 +32,23 @@ const EventCreate = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setEvent({ ...event, imgUrl: `${imageUrl}` });
     const created = await createEvent(event);
     setIsCreated({ created });
   };
 
-  if (isCreated) return <Redirect to={`/events`} />
+  if (isCreated) return <Redirect to={`/events`} />;
 
   return (
     <Layout user={props.user}>
       <div className="event-create-container">
-      <EventForm
-        header={"SUBMIT YOUR EVENT"}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        event={event}
-        setEvent={setEvent}
-      />
+        <EventForm
+          header={"SUBMIT YOUR EVENT"}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          event={event}
+          setImageUrl={setImageUrl}
+        />
       </div>
     </Layout>
   );

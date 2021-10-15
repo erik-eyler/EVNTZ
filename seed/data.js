@@ -46,9 +46,9 @@ const insertData = async () => {
   // products data that we want inserted into database
   const products = [
     {
-      date: "10/21/2021",
-      startTime: "6pm",
-      endTime: "8pm",
+      date: "2021-10-23",
+      startTime: "18:00",
+      endTime: "20:00",
       location: "Town Green",
       title: "Live Music on the Green",
       cost: "Free",
@@ -57,9 +57,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1472653431158-6364773b2a56"
     },
     {
-      date: "10/23/2021",
-      startTime: "12pm",
-      endTime: "1:30pm",
+      date: "2021-10-23",
+      startTime: "12:00",
+      endTime: "13:30",
       location: "Edwin Walters Park",
       title: "Newcastle Pantry",
       cost: "Free",
@@ -68,9 +68,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1561394496-8c1d15076c5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
     },
     {
-      date: "10/24/2021",
-      startTime: "2pm",
-      endTime: "3:30pm",
+      date: "2021-10-24",
+      startTime: "14:00",
+      endTime: "15:30",
       location: "Limitless Park",
       title: "Movies in the Park",
       cost: "Free",
@@ -79,9 +79,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2409&q=80"
     },
     {
-      date: "Pumpkin Carving",
-      startTime: "3pm",
-      endTime: "7pm",
+      date: "2021-10-27",
+      startTime: "15:00",
+      endTime: "19:00",
       location: "Limitless Park",
       title: "Pumpkin Carving",
       cost: "$5",
@@ -90,54 +90,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1541695474851-f12cb89442fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
     },
     {
-      date: "10/21/2021",
-      startTime: "6pm",
-      endTime: "8pm",
-      location: "Town Green",
-      title: "Live Music on the Green",
-      cost: "Free",
-      headline: "Featuring the Lorem Ipsums",
-      details: "Join us for a night of live music on the green featuring the Lorem Ipsums with opening act Malicious Javascript. All ages welcome and the event is free. Refreshments will be available to purchase with proceeds going to the Newcastle Music Boosters",
-      ageGroup: "All Ages",
-      imgUrl: "https://images.unsplash.com/photo-1472653431158-6364773b2a56"
-    },
-    {
-      date: "10/23/2021",
-      startTime: "12pm",
-      endTime: "1:30pm",
-      location: "Edwin Walters Park",
-      title: "Newcastle Pantry",
-      cost: "Free",
-      details: "Volunteer with the team from Newcastle Pantry to serve hot meals to those in need in the Newcastle community. Set-up begins at 11am with clean-up directly following the event at 1:30pm. Volunteers must be 16 and over and adhere to food safety standards while working",
-      ageGroup: "16 and over",
-      imgUrl: "https://images.unsplash.com/photo-1561394496-8c1d15076c5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
-    },
-    {
-      date: "10/24/2021",
-      startTime: "2pm",
-      endTime: "3:30pm",
-      location: "Limitless Park",
-      title: "Movies in the Park",
-      cost: "Free",
-      details: "Join kids of all ages to celebrate the spooky halloween season with the animated Addams Family. We welcome you to bring your favorite movie snacks and refreshments and enjoy our final outdoor screening of the year.",
-      ageGroup: "All Ages",
-      imgUrl: "https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2409&q=80"
-    },
-    {
-      date: "Pumpkin Carving",
-      startTime: "3pm",
-      endTime: "7pm",
-      location: "Limitless Park",
-      title: "Pumpkin Carving",
-      cost: "$5",
-      details: "Bring the family down to Limitless Park for our annual pumpkin carving! Pumpkins are provided for a donation of $5 each benefitting the Newcastle Pantry. Carving supplies and paints will be provided for kids of all ages.",
-      ageGroup: "All Ages",
-      imgUrl: "https://images.unsplash.com/photo-1541695474851-f12cb89442fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-    },
-    {
-      date: "10/21/2021",
-      startTime: "6pm",
-      endTime: "8pm",
+      date: "2021-10-23",
+      startTime: "18:00",
+      endTime: "20:00",
       location: "Town Green",
       title: "Live Music on the Green",
       cost: "Free",
@@ -146,9 +101,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1472653431158-6364773b2a56"
     },
     {
-      date: "10/23/2021",
-      startTime: "12pm",
-      endTime: "1:30pm",
+      date: "2021-10-23",
+      startTime: "12:00",
+      endTime: "13:30",
       location: "Edwin Walters Park",
       title: "Newcastle Pantry",
       cost: "Free",
@@ -157,9 +112,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1561394496-8c1d15076c5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
     },
     {
-      date: "10/24/2021",
-      startTime: "2pm",
-      endTime: "3:30pm",
+      date: "2021-10-24",
+      startTime: "14:00",
+      endTime: "15:30",
       location: "Limitless Park",
       title: "Movies in the Park",
       cost: "Free",
@@ -168,9 +123,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2409&q=80"
     },
     {
-      date: "Pumpkin Carving",
-      startTime: "3pm",
-      endTime: "7pm",
+      date: "2021-10-27",
+      startTime: "15:00",
+      endTime: "19:00",
       location: "Limitless Park",
       title: "Pumpkin Carving",
       cost: "$5",
@@ -179,9 +134,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1541695474851-f12cb89442fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
     },
     {
-      date: "10/21/2021",
-      startTime: "6pm",
-      endTime: "8pm",
+      date: "2021-10-23",
+      startTime: "18:00",
+      endTime: "20:00",
       location: "Town Green",
       title: "Live Music on the Green",
       cost: "Free",
@@ -190,9 +145,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1472653431158-6364773b2a56"
     },
     {
-      date: "10/23/2021",
-      startTime: "12pm",
-      endTime: "1:30pm",
+      date: "2021-10-23",
+      startTime: "12:00",
+      endTime: "13:30",
       location: "Edwin Walters Park",
       title: "Newcastle Pantry",
       cost: "Free",
@@ -201,9 +156,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1561394496-8c1d15076c5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
     },
     {
-      date: "10/24/2021",
-      startTime: "2pm",
-      endTime: "3:30pm",
+      date: "2021-10-24",
+      startTime: "14:00",
+      endTime: "15:30",
       location: "Limitless Park",
       title: "Movies in the Park",
       cost: "Free",
@@ -212,9 +167,9 @@ const insertData = async () => {
       imgUrl: "https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2409&q=80"
     },
     {
-      date: "Pumpkin Carving",
-      startTime: "3pm",
-      endTime: "7pm",
+      date: "2021-10-27",
+      startTime: "15:00",
+      endTime: "19:00",
       location: "Limitless Park",
       title: "Pumpkin Carving",
       cost: "$5",
@@ -222,6 +177,50 @@ const insertData = async () => {
       ageGroup: "All Ages",
       imgUrl: "https://images.unsplash.com/photo-1541695474851-f12cb89442fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
     },
+    {
+      date: "2021-10-23",
+      startTime: "18:00",
+      endTime: "20:00",
+      location: "Town Green",
+      title: "Live Music on the Green",
+      cost: "Free",
+      details: "Join us for a night of live music on the green featuring the Lorem Ipsums with opening act Malicious Javascript. All ages welcome and the event is free. Refreshments will be available to purchase with proceeds going to the Newcastle Music Boosters",
+      ageGroup: "All Ages",
+      imgUrl: "https://images.unsplash.com/photo-1472653431158-6364773b2a56"
+    },
+    {
+      date: "2021-10-23",
+      startTime: "12:00",
+      endTime: "13:30",
+      location: "Edwin Walters Park",
+      title: "Newcastle Pantry",
+      cost: "Free",
+      details: "Volunteer with the team from Newcastle Pantry to serve hot meals to those in need in the Newcastle community. Set-up begins at 11am with clean-up directly following the event at 1:30pm. Volunteers must be 16 and over and adhere to food safety standards while working",
+      ageGroup: "16 and over",
+      imgUrl: "https://images.unsplash.com/photo-1561394496-8c1d15076c5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+      date: "2021-10-24",
+      startTime: "14:00",
+      endTime: "15:30",
+      location: "Limitless Park",
+      title: "Movies in the Park",
+      cost: "Free",
+      details: "Join kids of all ages to celebrate the spooky halloween season with the animated Addams Family. We welcome you to bring your favorite movie snacks and refreshments and enjoy our final outdoor screening of the year.",
+      ageGroup: "All Ages",
+      imgUrl: "https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2409&q=80"
+    },
+    {
+      date: "2021-10-27",
+      startTime: "15:00",
+      endTime: "19:00",
+      location: "Limitless Park",
+      title: "Pumpkin Carving",
+      cost: "$5",
+      details: "Bring the family down to Limitless Park for our annual pumpkin carving! Pumpkins are provided for a donation of $5 each benefitting the Newcastle Pantry. Carving supplies and paints will be provided for kids of all ages.",
+      ageGroup: "All Ages",
+      imgUrl: "https://images.unsplash.com/photo-1541695474851-f12cb89442fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    }
   ]
 
     // insert products into database

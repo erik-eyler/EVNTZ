@@ -1,3 +1,4 @@
+
 hr {
   width: 95%;
   border: none;
@@ -73,6 +74,7 @@ hr {
 .cards-container {
   display: flex;
   justify-content: space-around;
+  height: 600px;
 }
 
 .cards {
