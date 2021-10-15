@@ -10,7 +10,6 @@ const EventDetail = (props) => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   const [deleted, setDeleted] = useState(false);
-  
 
   useEffect(() => {
     const fetchEvent = async () => {
@@ -21,7 +20,6 @@ const EventDetail = (props) => {
     fetchEvent();
   }, [id]);
 
-  
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
@@ -31,7 +29,7 @@ const EventDetail = (props) => {
     setDeleted({ deleted });
   };
 
-  if (deleted) return <Redirect to={`/events`} />
+  if (deleted) return <Redirect to={`/events`} />;
 
   return (
     <Layout user={props.user}>
@@ -44,6 +42,7 @@ const EventDetail = (props) => {
               alt={event?.title}
             />
           </div>
+
           <div className="event-detail-content">
             <h1 className="content-title">{event?.title}</h1>
             <div className="sub-container">
