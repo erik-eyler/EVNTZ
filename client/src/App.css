@@ -3,12 +3,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #EDF6F9;
+  margin: 0;
 }
 
 .App {
   text-align: center;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 a {

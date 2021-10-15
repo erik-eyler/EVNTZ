@@ -73,7 +73,7 @@ const SignUp = (props) => {
       <div className="authentication-form">
         <div className="user-form-container sign-up">
           <h3 className="user-form-heading">Sign Up!</h3>
-          <form onSubmit={submitForm}>
+          <form className="sign-up-form" onSubmit={submitForm}>
             <div className="input-group">
               <label className="user-label">First Name</label>
               <input
@@ -147,6 +147,7 @@ const SignUp = (props) => {
               />
             </div>
             {toggle ? <div className="danger">Passwords do not match</div> : null}
+            <br/>
             <Button name="Sign Up" />
           </form>
         </div>
