@@ -21,6 +21,7 @@ const Events = (props) => {
   const cards = events.map((event, index) =>
   
     <EventCard
+    row={""}
     key={index}
     id={event._id}
     title={event.title}

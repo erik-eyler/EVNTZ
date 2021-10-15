@@ -36,9 +36,10 @@ const Home = (props) => {
   })
 
   // ---------------- upcoming events, bottom home ------------------------
-  const cards = events.map((event, index) => index < 4 ? 
+  const cards = events.map((event, index) => index < 8 ? 
     <EventCard
       key={index}
+      row={`row`}
       id={event._id}
       title={event.title}
       date={event.date}

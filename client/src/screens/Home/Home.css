@@ -77,11 +77,20 @@ hr {
 .cards {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-flow: row;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 50px;
-  /* overflow: scroll; */
+  overflow-x: auto;
+}
+
+.row {
+  width: auto;
+  padding: 0 50px;
+  margin: 0 50px;
+}
+.cards::-webkit-scrollbar {
+  width: 0;
 }
 
 @media screen and (max-width: 1024px) {
