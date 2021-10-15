@@ -10,7 +10,7 @@ const EventCard = (props) => {
   const endTime = reformatTime(props.endTime);
 
   return (
-    <div className="event-card">
+    <div className={`${props.row} event-card`}>
       <Link className="card" to={`/events/${props.id}`}>
         <div className="event-card-image-container">
           <img src={props.img} alt={props.title} className="event-card-image" />
