@@ -1,6 +1,7 @@
 import "../EventForm/EventForm.css";
 import { useState } from "react";
 import Button from "../Button/Button";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const EventForm = (props) => {
   const [loading, setLoading] = useState(false);
@@ -35,7 +36,7 @@ const EventForm = (props) => {
         {loading ? (
           <h2>Loading Image...</h2>
         ) : (
-          <img className="image-of-event" src={image} alt="user event upload"/>
+          <img className="image-of-event" src={image} alt="user event upload" />
         )}
       </div>
 
@@ -141,6 +142,7 @@ const EventForm = (props) => {
               onChange={props.handleChange}
             />
           </div>
+          <FaCloudUploadAlt className="cloud" size="1.8em" color="#e29578" />
           <input
             className="file"
             type="file"
