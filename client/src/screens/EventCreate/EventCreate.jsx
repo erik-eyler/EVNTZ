@@ -5,7 +5,7 @@ import EventForm from "../../components/EventForm/EventForm";
 import Layout from "../../components/Layout/Layout";
 import "./EventCreate.css"
 
-const EventCreate = () => {
+const EventCreate = (props) => {
   const history = useHistory();
 
   const [event, setEvent] = useState({
@@ -37,7 +37,7 @@ const EventCreate = () => {
   };
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="event-create-container">
       <EventForm
         header={"SUBMIT YOUR EVENT"}

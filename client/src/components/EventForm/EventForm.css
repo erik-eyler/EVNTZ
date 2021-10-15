@@ -3,8 +3,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   box-sizing: border-box;
+}
+
+.mobile-event-header {
+  display: none;
 }
 
 .form-container {
@@ -109,6 +113,10 @@ input {
   padding: 10px;
 }
 
+.form-label {
+  font-size: 14px;
+}
+
 .details-input {
   width: 100%;
   padding: 10px 10px 100px 10px;
@@ -156,5 +164,80 @@ input {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .age-cost {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-img {
+    padding-bottom: 100px;
+    margin: 0px 80px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .div {
+    flex-direction: column-reverse;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .div {
+    width: 100%;
+  }
+  
+  .mobile-event-header {
+    display: block;
+    color: #006d77;
+  }
+
+  .event-header {
+    display: none;
+  }
+
+  .date-time {
+  flex-direction: column;
+}
+
+  .age-cost {
+    flex-direction: column;
+  }
+
+  .form-label {
+    display: block;
+  }
+
+
+  .date-input,
+  .start-input,
+  .end-input {
+    width: 88%; 
+  }
+
+  
+  .start-time,
+  cost  {
+    margin: 15px 0px;
+    padding: 15px 0px;
+  }
+
+  .age,
+  .cost {
+    padding: 15px 0px;
+  }
+
+
+  .age-cost {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .file {
+    width: 80%;
+  }
+
+
 }
