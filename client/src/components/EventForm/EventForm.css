@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
   box-sizing: border-box;
 }
 
@@ -103,8 +102,6 @@ input {
 
 .cost-input {
   width: 100%;
-  /* margin-top: 9px; */
-  /* padding: 5px 10px; */
   box-sizing: border-box;
   height: 39px;
 }
@@ -142,7 +139,6 @@ input {
 .age-cost {
   display: flex;
   justify-content: space-between;
-  /* grid-template-columns: repeat(2, 1fr); */
   text-align: left;
   color: #006d77;
   font-weight: bold;
