@@ -1,3 +1,4 @@
+
 hr {
   width: 95%;
   border: none;
@@ -70,13 +71,15 @@ hr {
   margin-left: 2.5%;
 }
 
-.card-container {
+.cards-container {
   display: flex;
+  justify-content: space-around;
+  height: 600px;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+/*   justify-content: space-around;
   flex-flow: row;
   width: 80%;
   margin: 0 auto;
@@ -90,9 +93,24 @@ hr {
   margin: 0 50px;
 }
 .cards::-webkit-scrollbar {
-  width: 0;
+  width: 0; */
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2%;
+  height: 400px;
+  /* overflow: scroll; */
 }
 
+div.cards.card {
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1500px){
+  .cards {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1024px) {
   .hero-title {
     line-height: 1.5em;
@@ -108,6 +126,7 @@ hr {
   .branding-item {
     margin: 0 20px;
   }
+  
 }
 
 @media screen and (max-width: 900px) {

@@ -61,6 +61,10 @@ const App = () => {
         <Route exact path="/events/:id">
           <EventDetail user={user} />
         </Route>
+
+        <Route path="/contact">
+          <Contact user={user} />
+        </Route>
       </Switch>
     </div>
   );

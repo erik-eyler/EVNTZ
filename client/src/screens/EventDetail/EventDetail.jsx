@@ -1,7 +1,7 @@
 import "./EventDetail.css";
 import { useState, useEffect } from "react";
 import { getEvent, deleteEvent } from "../../services/events";
-import { useParams, Link, useHistory } from "react-router-dom";
+import { useParams, Link, Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import Button from "../../components/Button/Button";
 
@@ -10,7 +10,6 @@ const EventDetail = (props) => {
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   const [deleted, setDeleted] = useState(false);
-  const history = useHistory();
 
   useEffect(() => {
     const fetchEvent = async () => {
@@ -21,16 +20,16 @@ const EventDetail = (props) => {
     fetchEvent();
   }, [id]);
 
-  console.log(event);
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
 
   const handleClick = async () => {
-    const deleted = await deleteEvent(event?._id);
-    setDeleted(deleted);
-    history.push("/events");
+    const deleted = await deleteEvent(event._id);
+    setDeleted({ deleted });
   };
+
+  if (deleted) return <Redirect to={`/events`} />;
 
   return (
     <Layout user={props.user}>
@@ -43,6 +42,7 @@ const EventDetail = (props) => {
               alt={event?.title}
             />
           </div>
+
           <div className="event-detail-content">
             <h1 className="content-title">{event?.title}</h1>
             <div className="sub-container">
@@ -78,7 +78,7 @@ const EventDetail = (props) => {
               <Button
                 name={"Delete Event"}
                 className="update-button"
-                onClick={() => handleClick()}
+                handleClick={handleClick}
               ></Button>
             </div>
           </div>

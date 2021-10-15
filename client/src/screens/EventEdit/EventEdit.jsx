@@ -14,7 +14,7 @@ const EventEdit = (props) => {
     title: "",
     cost: "",
     details: "",
-    ageGroup: "All Ages", //needs to be set to all ages by default(dropdown)
+    ageGroup: "All Ages", 
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -47,9 +47,9 @@ const EventEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div>
-        <h2 className="event-edit-header">EDIT YOUR EVENT</h2>
+      <div className="event-edit-container">
         <EventForm
+          header={"EDIT YOUR EVENT"}
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           event={event}

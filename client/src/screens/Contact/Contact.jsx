@@ -3,9 +3,9 @@ import "./Contact.css";
 import linkedInBug from "../../assets/LI-In-Bug.png";
 import gitHubBug from "../../assets/GitHub-Mark-120px-plus.png"
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <Layout>
+    <Layout user={props.user} >
       <div className="contact">
         <div className="contact-header">
           <h1>Meet the Team</h1>
@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="contact-card">
             <p className="team-name">Grecia Castillo</p>
             <div>
-              <a href="" rel="noreferrer noopener">
+              <a href="https://www.linkedin.com/in/grecia-castillo-502123223/" rel="noreferrer noopener">
                 <img className="social-bug" src={linkedInBug} alt="Grecia Castillo linkedIn" />
               </a>
               <a href="https://github.com/greciacas" rel="noreferrer noopener">
