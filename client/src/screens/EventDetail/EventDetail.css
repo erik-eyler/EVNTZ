@@ -17,12 +17,12 @@
 }
 
 .image-container {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-height: 50%;
   max-width: 50%;
-  /* margin: auto; */
   padding: 25px;
-  /* object-fit: cover; */
   height: auto;
   width: auto;
   box-sizing: border-box;
@@ -30,11 +30,9 @@
 }
 
 .event-detail-img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 85%;
+  height: 90%;
+  object-fit: cover;
 }
 
 .event-detail-content {
@@ -89,38 +87,53 @@
 }
 
 @media (max-width: 1024px) {
-.image-container {
-  max-width: 100%;
-  /* border:2px solid red; */
-  width: 100%;
-  margin: 0;
-}
-
-  .event-detail-content {
-    margin: 0 auto;
-  }
-
+  
   .event-detail-container {
     flex-direction: column;
   }
+  
+  .image-container {
+    max-width: 95%;
+    padding-top: 10%;
+    margin: 0 auto;
+  }
+
+  .event-detail-img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .event-detail-content {
+    width: 75%;
+    margin: 0 auto;
+    
+  }
+
+
 }
 
 @media (max-width: 700px) {
   .event-detail-container {
-    /* border: 2px solid green; */
     align-items: center;
-    width: 100%;
+    width: 90%;
+  }
+  .image-container {
+    max-width: 95%;
+    
   }
 
-  .image-container {
-    max-width: 65%;
-    margin-top: 20px;
+  .event-detail-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
   }
+
   .event-detail-wrapper {
     width: 100%;
   }
   .event-detail-content {
-    width: 100%;
+    width: 85%;
     box-sizing: border-box;
     padding: 0px 50px;
   }
@@ -131,12 +144,35 @@
 }
 
 @media (max-width: 375px) {
+  .image-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .event-detail-img {
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+  }
+
   .sub-container {
     flex-direction: column;
   }
 
   .event-detail-content {
-    padding: 0px 35px;
+    padding: 0px 30px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .event-detail-button {
+    padding: 35px 0px;
   }
 
 }
