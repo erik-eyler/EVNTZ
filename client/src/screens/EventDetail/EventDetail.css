@@ -150,7 +150,7 @@
   }
 
   .event-detail-img {
-    width: 90%;
+    width: 95%;
     height: 50%;
     object-fit: cover;
   }
@@ -160,7 +160,8 @@
   }
 
   .event-detail-content {
-    padding: 0px 30px;
+    width: 95%;
+    padding: 0px 25px;
   }
 
   .button-container {
