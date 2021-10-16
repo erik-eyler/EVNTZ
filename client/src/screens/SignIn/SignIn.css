@@ -1,12 +1,47 @@
 .authentication-form {
-  height: 100vh;
+  display: flex;
+  margin: 0 auto;
   padding-bottom: 200px;
+}
+
+.helper {
+  align-self: flex-start;
+  text-align: end;
+  color: #006d77;
+  flex-basis: 30%;
+  margin-right: 50px;
+  margin-top: 200px;
+  padding-left: 30px;
+}
+
+.helper p {
+  font-size: 32px;
+}
+
+ .helper a{
+  color: #006d77;
+  font-weight: 400;
+}
+
+.helper a:hover,
+.mobile-helper a:hover {
+  color: #83c5be;
+}
+
+.mobile-helper {
+  color: #006d77;
+  display: none;
+  padding-bottom: 20px;
+}
+
+.mobile-helper a {
+  color: #006d77;
 }
 
 .user-form-container {
   width: 400px;
-  height: 500px;
-  margin: 70px auto;
+  height: 550px;
+  margin: 70px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -16,7 +51,6 @@
   text-transform: uppercase;
   font-size: 2em;
   color: #006d77;
-
 }
 
 .user-form {
@@ -51,9 +85,34 @@
   color: red;
 }
 
-@media screen and (max-width: 400px){
-  .user-form-container {
-    width: 100%;
+@media screen and (max-width: 900px){
+  .helper {
+    margin-right: 20px;
+  }
+  div.user-form-container{
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 700px){
+  .mobile-helper{
+    display: inline-block;
+  }
+  div.helper {
+    display: none;
+  }
+  div.user-form-container{
+    margin: 70px auto;
+    height: 600px;
+  }
+  .user-form-heading{
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
 
+
+@media screen and (max-width: 4500px){
+  div.user-form-container {
+    margin: 70px 30px;
   }
 }
