@@ -122,6 +122,7 @@
   .event-detail-content {
     width: 100%;
     box-sizing: border-box;
+    padding: 0px 50px;
   }
 
   .content-title {
@@ -134,19 +135,8 @@
     flex-direction: column;
   }
 
-  .image-container {
-    /* max-width: 50%;
-    margin: auto;
-    padding: 25px;
-    padding-right: 50px; */
-  }
-  
-  .event-detail-img {
-    /* display: block; */
-    /* max-width: 100%; */
-    /* width: auto; */
-    /* height: auto; */
-    /* object-fit: cover; */
+  .event-detail-content {
+    padding: 0px 35px;
   }
 
 }
