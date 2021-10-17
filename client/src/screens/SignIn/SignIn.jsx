@@ -58,11 +58,11 @@ const SignIn = (props) => {
       <div className="authentication-form">
       <div className="helper">
           <p>New to EVNTZ?</p>
-          <Link to="/sign-up" className="login-signup-link"> Create an account <i class="fas fa-chevron-right"></i></Link>
+          <Link to="/sign-up" className="login-signup-link"> Create an account <i className="fas fa-chevron-right"></i></Link>
         </div>
         <div className="user-form-container">
           <h3 className="user-form-heading">Sign In</h3>
-          <p className="mobile-helper">New to EVNTZ?<Link to="/sign-up" className="login-signup-link"> Create an account <i class="fas fa-chevron-right"></i></Link></p>
+          <p className="mobile-helper">New to EVNTZ?<Link to="/sign-up" className="login-signup-link"> Create an account <i className="fas fa-chevron-right"></i></Link></p>
           <form className="user-form"onSubmit={onSignIn}>
             <div className="email-group"> 
               <label className="user-label">Email</label>
@@ -89,10 +89,10 @@ const SignIn = (props) => {
               />
             </div>
             {/* {toggle ? <div className="danger">Incorrect email or password</div> : null} */}
-            
-            <Button name="Sign In" />
             <br/>
             {renderError()}
+            <Button name="Sign In" />
+          
           </form>
         </div>
       </div>
