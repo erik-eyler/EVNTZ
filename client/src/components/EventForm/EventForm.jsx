@@ -45,7 +45,7 @@ const EventForm = (props) => {
       </div>
 
       <div className="form-container">
-        <h2 className="mobile-event-header">{event.header}</h2>
+        <h2 className="mobile-event-header">{header}</h2>
         <form onSubmit={handleSubmit}>
           <div className="title">
             <div className="form-label">TITLE</div>
