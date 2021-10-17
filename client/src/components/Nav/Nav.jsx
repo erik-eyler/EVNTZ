@@ -2,7 +2,6 @@ import "./Nav.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Burger from "../Burger/Burger";
-import Menu from "../Menu/Menu";
 
 const authenticatedOptions = (
   <>
@@ -51,17 +50,14 @@ const Nav = ({ user }) => {
           EVNTZ
         </NavLink>
         {width < breakpoint ? (
-          <>
-            <Burger open={open} setOpen={setOpen} />
-            <Menu
-              open={open}
-              setOpen={setOpen}
-              user={user}
-              alwaysOptions={alwaysOptions}
-              authenticatedOptions={authenticatedOptions}
-              unauthenticatedOptions={unauthenticatedOptions}
-            />
-          </>
+          <Burger
+            open={open}
+            setOpen={setOpen}
+            user={user}
+            alwaysOptions={alwaysOptions}
+            authenticatedOptions={authenticatedOptions}
+            unauthenticatedOptions={unauthenticatedOptions}
+          />
         ) : (
           <div className="nav-right">
             {user && (

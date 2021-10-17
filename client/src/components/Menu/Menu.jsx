@@ -1,20 +1,20 @@
-// import { NavLink } from "react-router-dom";
 import "./Menu.css"
 
 const Menu = (props) => {
-  const { alwaysOptions, authenticatedOptions, unauthenticatedOptions, user, open } =
+  const { alwaysOptions, authenticatedOptions, unauthenticatedOptions, user} =
     props;
+
   return (
-      <div className={open ? "menu" : "menu-closed"}>
-        {user && (
-          <div className="link welcome">
-            HELLO,
-            <br /> {user.username}
-          </div>
-        )}
-        {alwaysOptions}
-        {user ? authenticatedOptions : unauthenticatedOptions}
-      </div> 
+    <div className="menu">
+      {user && (
+        <div className="link welcome">
+          HELLO,
+          <br /> {user.username}
+        </div>
+      )}
+      {alwaysOptions}
+      {user ? authenticatedOptions : unauthenticatedOptions}
+    </div>
   );
 };
 

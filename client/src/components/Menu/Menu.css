@@ -3,31 +3,45 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: white;
-  height: 100vh;
-  text-align: left;
-  padding: 4rem;
-  position: absolute;
   top: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(0);
-}
-
-.menu-closed {
-  display: none;
+  background: white;
+  height: 100vh;
+  width: 20em;
+  text-align: left;
+  padding-top: 100px;
+  position: absolute;
 }
 
 .menu a {
-  padding: 10px 0;
+  padding: 15px 50px;
 }
 
 .menu a:hover {
   color: #83c5be;
 }
 
-@media screen and (max-width: 500){
+.menu-enter {
+  opacity: 0;
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.menu-exit {
+  opacity: 1;
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+  display: none;
+}
+
+@media screen and (max-width: 500) {
   .menu {
-    min-width: 100vw;
+    text-align: center;
   }
 }

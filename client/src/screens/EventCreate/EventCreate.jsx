@@ -30,9 +30,14 @@ const EventCreate = (props) => {
     });
   };
 
+  const addImage = () => {
+    setEvent({ ...event, 'imgUrl': `${imageUrl}`});
+  }
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setEvent({ ...event, imgUrl: `${imageUrl}` });
+    console.log(imageUrl)
+    addImage();
     const created = await createEvent(event);
     setIsCreated({ created });
   };

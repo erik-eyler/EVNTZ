@@ -1,6 +1,6 @@
 .burger{
   position: absolute;
-  top: 0.25%;
+  top: 20px;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ span.patty {
   height: 0.25rem;
   background: #006D77;
   border-radius: 10px;
-  transition: all 0.1s linear;
+  transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
 }
