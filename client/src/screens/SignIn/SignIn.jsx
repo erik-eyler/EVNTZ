@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import Button from "../../components/Button/Button";
 import "./SignIn.css"
@@ -56,8 +56,13 @@ const SignIn = (props) => {
   return (
     <Layout>
       <div className="authentication-form">
+      <div className="helper">
+          <p>New to EVNTZ?</p>
+          <Link to="/sign-up" className="login-signup-link"> Create an account <i class="fas fa-chevron-right"></i></Link>
+        </div>
         <div className="user-form-container">
-          <h3 className="user-form-heading">Log In</h3>
+          <h3 className="user-form-heading">Sign In</h3>
+          <p className="mobile-helper">New to EVNTZ?<Link to="/sign-up" className="login-signup-link"> Create an account <i class="fas fa-chevron-right"></i></Link></p>
           <form className="user-form"onSubmit={onSignIn}>
             <div className="email-group"> 
               <label className="user-label">Email</label>
