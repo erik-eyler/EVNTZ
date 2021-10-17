@@ -75,11 +75,13 @@ const EventDetail = (props) => {
               <Link to={`/events/${event?._id}/edit`}>
                 <Button name={"Edit Event"} className="update-button"></Button>
               </Link>
+              <div className="event-detail-button">
               <Button
                 name={"Delete Event"}
                 className="update-button"
                 handleClick={handleClick}
               ></Button>
+              </div>
             </div>
           </div>
         </div>
