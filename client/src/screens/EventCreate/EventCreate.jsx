@@ -29,17 +29,13 @@ const EventCreate = (props) => {
       [name]: value,
     });
   };
-
-  const addImage = () => {
-    setEvent({ ...event, 'imgUrl': `${imageUrl}`});
-  }
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(imageUrl)
-    addImage();
-    const created = await createEvent(event);
-    setIsCreated({ created });
+      setEvent({ ...event, [`imgUrl`]: `${imageUrl}`});
+      const created = await createEvent(event);
+      setIsCreated({ created });
+      console.log(event);
   };
 
   if (isCreated) return <Redirect to={`/events`} />;
@@ -53,6 +49,7 @@ const EventCreate = (props) => {
           handleSubmit={handleSubmit}
           event={event}
           setImageUrl={setImageUrl}
+          imageUrl={imageUrl}
         />
       </div>
     </Layout>
