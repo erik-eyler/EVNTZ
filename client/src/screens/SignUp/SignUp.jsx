@@ -73,11 +73,11 @@ const SignUp = (props) => {
       <div className="authentication-form">
       <div className="helper">
           <p>Have an account with us?</p>
-          <Link to="/sign-in" className="login-signup-link">Log In <i class="fas fa-chevron-right"></i></Link>
+          <Link to="/sign-in" className="login-signup-link">Log In <i className="fas fa-chevron-right"></i></Link>
         </div>
         <div className="user-form-container sign-up">
           <h3 className="user-form-heading">Sign Up!</h3>
-          <p className="mobile-helper">Have an account with us? <Link to="/sign-in" className="login-signup-link">Sign In <i class="fas fa-chevron-right"></i></Link></p>
+          <p className="mobile-helper">Have an account with us? <Link to="/sign-in" className="login-signup-link">Sign In <i className="fas fa-chevron-right"></i></Link></p>
           <form className="sign-up-form" onSubmit={submitForm}>
             <div className="input-group">
               <label className="user-label">First Name</label>
