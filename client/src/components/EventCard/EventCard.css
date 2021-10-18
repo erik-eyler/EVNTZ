@@ -17,14 +17,14 @@ a {
   min-height: fit-content;
   font-size: 12px;
   text-decoration: none;
-  /* width: 30%;
-  flex-grow: 1;
+  /* width: 300px; */
+  /* flex-grow: 1;
   height: 40vh; */
   flex: 0 1 30%;
 }
 .event-card-image-container {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
 }
 .event-card-image {

@@ -72,30 +72,36 @@ hr {
 
 .cards-container {
   display: flex;
-  width: 80%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-flow: row;
   /* flex-direction: row; */
-  width: 80%;
-  margin: 0 auto;
+  /* width: 100%; */
 
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  padding-left: 100px;
   padding-bottom: 50px;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .row {
   width: auto;
-  padding: 0 50px;
-  margin: 0 50px;
+  padding: 0 25px;
+  margin: 0 25px;
 }
 .cards::-webkit-scrollbar {
   width: 0;
 }
+
+/* @media screen and() {
+  
+} */
 
 /* @media screen and (max-width: 1500px) {
   .cards {
