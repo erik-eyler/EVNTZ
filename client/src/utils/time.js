@@ -8,6 +8,6 @@ export const reformatTime = (timeStr) => {
     let formattedTime = hours.join(":") + " PM";
     return formattedTime;
   } else {
-    return timeStr + " AM";
+    return `${timeStr} AM`;
   }
 };
