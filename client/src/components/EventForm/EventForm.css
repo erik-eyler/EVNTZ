@@ -184,7 +184,7 @@ input {
 
 @media (max-width: 700px) {
   .div {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .event-header {
@@ -202,7 +202,7 @@ input {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .div {
     width: 100%;
   }
