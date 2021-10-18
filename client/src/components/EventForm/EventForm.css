@@ -178,15 +178,26 @@ input {
     margin: 0px 80px;
   }
 
-  /* .image-of-event {
-    display: flex;
-    align-content: flex-end;
-  } */
+
 }
 
 @media (max-width: 700px) {
   .div {
     flex-direction: column;
+  }
+
+  .event-header {
+    display: none;
+  }
+
+  .mobile-event-header {
+    display: block;
+    color: #006d77;
+  }
+
+  .form-container {
+    margin: 0;
+    padding-bottom: 40px;
   }
 }
 
