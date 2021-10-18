@@ -6,7 +6,7 @@ import Layout from "../../components/Layout/Layout";
 import "./EventCreate.css";
 
 const EventCreate = (props) => {
-  const [imageUrl, setImageUrl] = useState("");
+ 
 
   const [event, setEvent] = useState({
     date: "",
@@ -29,15 +29,14 @@ const EventCreate = (props) => {
       [name]: value,
     });
   };
-  
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-      setEvent({ ...event, [`imgUrl`]: `${imageUrl}`});
-      const created = await createEvent(event);
-      setIsCreated({ created });
-      console.log(event);
+    const created = await createEvent(event);
+    setIsCreated({ created });  
   };
-
+  
   if (isCreated) return <Redirect to={`/events`} />;
 
   return (
@@ -48,8 +47,8 @@ const EventCreate = (props) => {
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           event={event}
-          setImageUrl={setImageUrl}
-          imageUrl={imageUrl}
+          setEvent={setEvent}
+          setIsCreated={setIsCreated}
         />
       </div>
     </Layout>

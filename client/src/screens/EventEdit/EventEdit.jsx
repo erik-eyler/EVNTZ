@@ -39,7 +39,7 @@ const EventEdit = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updated = await updateEvent(id, event);
-    setUpdated(updated);
+    setUpdated({updated});
   };
   if (isUpdated) {
     return <Redirect to={`/events/${id}`} />;

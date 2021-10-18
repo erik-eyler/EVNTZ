@@ -1,27 +1,22 @@
 import "../EventForm/EventForm.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "../Button/Button";
 // import { FaCloudUploadAlt } from "react-icons/fa";
 
 const EventForm = (props) => {
-  const { event, setImageUrl, imageUrl, handleChange, handleSubmit, header, setEvent } = props;
+  const { event,  handleSubmit, handleChange, header, setEvent} = props;
   const [loading, setLoading] = useState(false);
   const [newImage, setNewImage] = useState(
     "https://images.unsplash.com/photo-1621112904887-419379ce6824?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80"
   );
 
-  useEffect(() => {
-    setImageUrl(newImage);
-    setEvent({ ...event, [`imgUrl`]: `${imageUrl}`});
-  })
-  
+  // ------------------- uploads user image to cloudinary, returns URL to display ----------------
     const uploadImage = async (e) => {
       const files = e.target.files;
       const data = new FormData();
       data.append("file", files[0]);
       data.append("upload_preset", "testing");
       setLoading(true);
-  
       const res = await fetch(
         "https://api.cloudinary.com/v1_1/dehiekpya/image/upload",
         {
@@ -31,8 +26,10 @@ const EventForm = (props) => {
       );
       const file = await res.json();
       setNewImage(file.secure_url);
+      setEvent({ ...event, [`imgUrl`]: `${file.secure_url}`});
       setLoading(false);
     };
+
 
   return (
     <div className="div">
@@ -146,7 +143,7 @@ const EventForm = (props) => {
               name="details"
               value={event.details}
               onChange={handleChange}
-            />
+           />
           </div>
           {/* <FaCloudUploadAlt className="cloud" size="1.8em" color="#e29578" /> */}
           <input
