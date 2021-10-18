@@ -73,7 +73,7 @@ const EventForm = (props) => {
             </div>
 
             <div className="start-time">
-              <label className="form-label">START TME*</label>
+              <label className="form-label">START TIME*</label>
               <input
                 className="start-input form-input"
                 type="time"

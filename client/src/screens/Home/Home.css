@@ -95,9 +95,9 @@ hr {
   padding: 0 25px;
   margin: 0 25px;
 }
-.cards::-webkit-scrollbar {
+/* .cards::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 /* @media screen and (max-width: 1500px) {
   .cards {
