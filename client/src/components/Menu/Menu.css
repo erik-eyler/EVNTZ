@@ -40,6 +40,10 @@
   display: none;
 }
 
+div.link.welcome {
+  line-height: 1.5em;
+}
+
 @media screen and (max-width: 500) {
   .menu {
     text-align: center;

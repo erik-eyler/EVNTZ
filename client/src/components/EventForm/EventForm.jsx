@@ -4,32 +4,33 @@ import Button from "../Button/Button";
 import { FaCloudUploadAlt } from "react-icons/fa";
 
 const EventForm = (props) => {
-  const { event, setImageUrl, handleChange, handleSubmit, header } = props;
+  const { event,  handleSubmit, handleChange, header, setEvent} = props;
   const [loading, setLoading] = useState(false);
   const [newImage, setNewImage] = useState(
     "https://images.unsplash.com/photo-1621112904887-419379ce6824?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80"
   );
 
-  const uploadImage = async (e) => {
-    const files = e.target.files;
-    const data = new FormData();
-    data.append("file", files[0]);
-    data.append("upload_preset", "testing");
-    setLoading(true);
+  // ------------------- uploads user image to cloudinary, returns URL to display ----------------
+    const uploadImage = async (e) => {
+      const files = e.target.files;
+      const data = new FormData();
+      data.append("file", files[0]);
+      data.append("upload_preset", "testing");
+      setLoading(true);
+      const res = await fetch(
+        "https://api.cloudinary.com/v1_1/dehiekpya/image/upload",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
+      const file = await res.json();
+      setNewImage(file.secure_url);
+      setEvent({ ...event, [`imgUrl`]: `${file.secure_url}`});
+      setLoading(false);
+    };
 
-    const res = await fetch(
-      "https://api.cloudinary.com/v1_1/dehiekpya/image/upload",
-      {
-        method: "POST",
-        body: data,
-      }
-    );
 
-    const file = await res.json();
-    setNewImage(file.secure_url);
-    setImageUrl(file.secure_url);
-    setLoading(false);
-  };
 
   return (
     <div className="div">
@@ -37,12 +38,9 @@ const EventForm = (props) => {
         <h2 className="event-header">{header}</h2>
         {loading ? (
           <h2>Loading Image...</h2>
-        ) : (
-          <img
-            className="image-of-event"
-            src={newImage}
-            alt="user event upload"
-          />
+        ) : ( 
+          <img className="image-of-event" src={newImage} alt="user event upload" />
+
         )}
       </div>
 
@@ -50,7 +48,7 @@ const EventForm = (props) => {
         <h2 className="mobile-event-header">{header}</h2>
         <form onSubmit={handleSubmit}>
           <div className="title">
-            <div className="form-label">TITLE</div>
+            <div className="form-label">TITLE*</div>
             <input
               className="title-input form-input"
               placeholder="title"
@@ -62,7 +60,7 @@ const EventForm = (props) => {
 
           <div className="date-time">
             <div className="date">
-              <label className="form-label">DATE</label>
+              <label className="form-label">DATE*</label>
               <input
                 className="date-input form-input"
                 type="date"
@@ -75,7 +73,7 @@ const EventForm = (props) => {
             </div>
 
             <div className="start-time">
-              <label className="form-label">START TME</label>
+              <label className="form-label">START TME*</label>
               <input
                 className="start-input form-input"
                 type="time"
@@ -87,7 +85,7 @@ const EventForm = (props) => {
             </div>
 
             <div className="end-time">
-              <label className="form-label">END TIME</label>
+              <label className="form-label">END TIME*</label>
               <input
                 className="end-input form-input"
                 type="time"
@@ -101,7 +99,7 @@ const EventForm = (props) => {
 
           <div className="age-cost">
             <div className="age">
-              <label className="form-label">AGE GROUP</label>
+              <label className="form-label">AGE GROUP*</label>
               <select
                 className="age-input form-input"
                 placeholder="Select Age Group"
@@ -129,7 +127,7 @@ const EventForm = (props) => {
           </div>
 
           <div className="location">
-            <label className="form-label">LOCATION: </label>
+            <label className="form-label">LOCATION:* </label>
             <input
               className="location-input form-input"
               placeholder="location"
@@ -140,14 +138,14 @@ const EventForm = (props) => {
           </div>
 
           <div className="details">
-            <label className="form-label">DETAILS: </label>
+            <label className="form-label">DETAILS:* </label>
             <input
               className="details-input form-input"
               placeholder="Event Details"
               name="details"
               value={event.details}
               onChange={handleChange}
-            />
+           />
           </div>
 
           <input

@@ -26,13 +26,14 @@ const Burger = ({
         <span className={open ? "patty rotate" : "patty"} />
       </div>
       <CSSTransition in={open} timeout={500} classNames="menu" unmountOnExit nodeRef={nodeRef}>
-        <Menu
-          user={user}
-          alwaysOptions={alwaysOptions}
-          authenticatedOptions={authenticatedOptions}
-          unauthenticatedOptions={unauthenticatedOptions}
-          ref={nodeRef}
-        />
+        <div ref={nodeRef} >
+          <Menu
+            user={user}
+            alwaysOptions={alwaysOptions}
+            authenticatedOptions={authenticatedOptions}
+            unauthenticatedOptions={unauthenticatedOptions}
+          />
+        </div>
       </CSSTransition>
     </>
   );

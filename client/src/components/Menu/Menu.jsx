@@ -5,11 +5,10 @@ const Menu = (props) => {
     props;
 
   return (
-    <div className="menu">
+    <div className="menu" >
       {user && (
         <div className="link welcome">
-          HELLO,
-          <br /> {user.username}
+          Hello, {user.username}
         </div>
       )}
       {alwaysOptions}
