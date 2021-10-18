@@ -4,17 +4,29 @@ import { getEvent, deleteEvent } from "../../services/events";
 import { useParams, Link, Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import Button from "../../components/Button/Button";
+import { reformatDate } from "../../utils/date";
+import { reformatTime } from "../../utils/time"
+
 
 const EventDetail = (props) => {
   const [event, setEvent] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   const [deleted, setDeleted] = useState(false);
+  const [formatDate, setFormatDate] = useState("");
+  const [startTime, setStartTime] = useState("");
+  const [endTime, setEndTime] = useState("");
+
+  // const startTime = reformatTime(event?.startTime);
+  // const endTime = reformatTime(event?.endTime);
 
   useEffect(() => {
     const fetchEvent = async () => {
       const event = await getEvent(id);
       setEvent(event);
+      setFormatDate(reformatDate(`${event?.date}`))
+      setStartTime(reformatTime(`${event?.startTime}`))
+      setEndTime(reformatTime(`${event?.endTime}`))
       setLoaded(true);
     };
     fetchEvent();
@@ -47,12 +59,12 @@ const EventDetail = (props) => {
             <h1 className="content-title">{event?.title}</h1>
             <div className="sub-container">
               <h4 className="content-bold">
-                WHEN: <span className="content-regular">{event?.date}</span>
+                WHEN: <span className="content-regular">{formatDate}</span>
               </h4>
               <h4 className="content-bold">
                 TIME:{" "}
-                <span className="content-regular">{event?.startTime}</span> -{" "}
-                <span className="content-regular">{event?.endTime}</span>
+                <span className="content-regular">{startTime}</span> -{" "}
+                <span className="content-regular">{endTime}</span>
               </h4>
             </div>
             <div className="sub-container">
