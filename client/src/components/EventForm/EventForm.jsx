@@ -1,7 +1,7 @@
 import "../EventForm/EventForm.css";
 import { useState } from "react";
 import Button from "../Button/Button";
-// import { FaCloudUploadAlt } from "react-icons/fa";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const EventForm = (props) => {
   const { event, setImageUrl, handleChange, handleSubmit, header } = props;
@@ -9,7 +9,6 @@ const EventForm = (props) => {
   const [newImage, setNewImage] = useState(
     "https://images.unsplash.com/photo-1621112904887-419379ce6824?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1172&q=80"
   );
-  
 
   const uploadImage = async (e) => {
     const files = e.target.files;
@@ -30,9 +29,8 @@ const EventForm = (props) => {
     setNewImage(file.secure_url);
     setImageUrl(file.secure_url);
     setLoading(false);
-
   };
-  
+
   return (
     <div className="div">
       <div className="event-img">
@@ -40,7 +38,11 @@ const EventForm = (props) => {
         {loading ? (
           <h2>Loading Image...</h2>
         ) : (
-          <img className="image-of-event" src={newImage} alt="user event upload" />
+          <img
+            className="image-of-event"
+            src={newImage}
+            alt="user event upload"
+          />
         )}
       </div>
 
@@ -147,15 +149,17 @@ const EventForm = (props) => {
               onChange={handleChange}
             />
           </div>
-          {/* <FaCloudUploadAlt className="cloud" size="1.8em" color="#e29578" /> */}
+
           <input
-            className="file"
+            id="file"
             type="file"
             accept="image/*"
             name="file"
             onChange={uploadImage}
           />
-          <label className="cloud-upload" />
+          <label htmlFor="file" className="cloud-upload">
+            UPLOAD FILE <FaCloudUploadAlt className="cloud" />
+          </label>
           <br />
 
           <Button className="submit-button" name="Submit" />
