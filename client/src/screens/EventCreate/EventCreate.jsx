@@ -17,7 +17,7 @@ const EventCreate = (props) => {
     cost: "",
     details: "",
     ageGroup: "",
-    imgUrl: "",
+    imgUrl: ""
   });
 
   const [isCreated, setIsCreated] = useState(false);
