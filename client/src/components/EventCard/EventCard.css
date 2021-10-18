@@ -59,3 +59,30 @@ a {
   margin: 0.5em;
   margin-bottom: 1em;
 }
+
+@media screen and (max-width: 375px) {
+  .event-card {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: 350px;
+  }
+  .event-card-image {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+  }
+  .event-card-image-container {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    max-height: 300px;
+    max-width: 200px;
+  }
+  .event-info-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
