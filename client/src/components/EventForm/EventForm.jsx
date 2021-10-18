@@ -139,7 +139,8 @@ const EventForm = (props) => {
 
           <div className="details">
             <label className="form-label">DETAILS:* </label>
-            <input
+            <textarea
+              rows="6"
               className="details-input form-input"
               placeholder="Event Details"
               name="details"
