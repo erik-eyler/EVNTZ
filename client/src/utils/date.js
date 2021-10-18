@@ -3,6 +3,6 @@
 
 export const reformatDate = (dateStr)=> {
  let dArr = dateStr.split("-"); 
-  return dArr[1]+ "/" +dArr[2]+ "/" +dArr[0].substring(2); 
+  return `${dArr[1]}/${dArr[2]}/${dArr[0]}`; 
 }
 
