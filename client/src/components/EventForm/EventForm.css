@@ -206,6 +206,7 @@ input {
   .form-container {
     margin: 0;
     padding-bottom: 40px;
+    width: 75%;
   }
 }
 
@@ -238,7 +239,7 @@ input {
   .date-input,
   .start-input,
   .end-input {
-    width: 88%;
+    width: 91%;
   }
 
   .start-time,
