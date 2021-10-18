@@ -1,6 +1,7 @@
 .authentication-form {
   display: flex;
   margin: 0 auto;
+  height: auto;
 }
 
 .helper {
@@ -90,9 +91,9 @@
   .helper {
     margin-right: 20px;
   }
-  div.user-form-container{
-    /* margin-left: 40px; */
-  }
+ .authentication-form {
+   margin: 50px auto;
+ }
 }
 @media screen and (max-width: 700px){
   .mobile-helper{
