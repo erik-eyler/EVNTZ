@@ -4,14 +4,14 @@
 
 [EVNTZ](https://suspicious-shirley-aff7c1.netlify.app/)
 
-
 ## Project Description
 
-EVNTZ is a web app for community events in the fictional town of Newcastle, NJ. Users are able to create their own account which is stored with industry standard JWT authentication methods. Users are then able to log in at any time and view the list of events, and also view full event details which include date and time, location, cost, age group and event specific directions and requirements. Users are also able to edit existing events, delete events and add their own to expand the opportunties for our fictional community to come together and connect. 
+EVNTZ is a web app for community events in the fictional town of Newcastle, NJ. Users are able to create their own account which is stored with industry standard JWT authentication methods. Users are then able to log in at any time and view the list of events, and also view full event details which include date and time, location, cost, age group and event specific directions and requirements. Users are also able to edit existing events, delete events and add their own to expand the opportunties for our fictional community to come together and connect.
 
 ## Schema
 
 Events Schema
+
 ```javascript
 {
   date: {type: String, required: true},
@@ -19,7 +19,7 @@ Events Schema
   endTime: {type: String, required: true},
   location: {type: String, required: true},
   title: {type: String, required: true},
-  cost: {type: Decimal128, required: false},
+  cost: {type: String, required: false},
   details: {type: String, required: true},
   ageGroup: {type: String, required: true}
 }
@@ -27,6 +27,7 @@ Events Schema
 ```
 
 User Schema
+
 ```javascript
 {
   firstName: {type: String, required: true},
@@ -41,11 +42,11 @@ User Schema
 
 ![Home](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Home%20v.101121.png)
 ![Event Details](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Event%20Details%20v.101121.png)
-![Create Event](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Create%20Event%20(1).png)
+![Create Event](<https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Create%20Event%20(1).png>)
 ![Login](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/Log%20in.png)
 
-
 ## Component Hierarchy
+
 ![Component Hierarchy](https://github.com/erik-eyler/EVNTZ/blob/kbg-dev/Images/EVNTZ%20-%20Component%20Hierarchy.png)
 
 ### Team Expectations
@@ -57,6 +58,7 @@ User Schema
 [GitHub Projects](https://github.com/erik-eyler/EVNTZ/projects/1)
 
 #### Client (Front End)
+
 - Have a working, interactive React app, built using npx create-react-app client
 - Have at least 6 separate, rendered components in an organized and understandable React file structure.
 - Utilize functional and class React components appropriately.
@@ -69,16 +71,18 @@ User Schema
 - Detail Screen
 
 #### Server (Back End)
+
 - Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
 - Authentication!
 
 #### Styling
+
 - Be styled with CSS.
 - Use flexbox (display: flex) or CSS Grid.
 - Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile).
 
 #### Deployment
+
 - Deploy the fully functional front-end via Netlify.
 - Deploy the back-end via [Heroku](https://www.heroku.com/).
 - Deploy the MongoDB database on [MongoDB Atlas](MongoDB Atlas).
-
