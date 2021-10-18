@@ -21,7 +21,7 @@ a {
   /* flex-grow: 1;
   height: 40vh; */
   flex: 0 1 30%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .event-card:hover {
   transform: scale(1.01);
