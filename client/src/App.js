@@ -50,10 +50,6 @@ const App = () => {
           <SignUp setUser={setUser} />
         </Route>
 
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-
         <Route exact path="/events/:id/edit">
           {user ? <EventEdit user={user} /> : <Redirect to="/" />}
         </Route>
