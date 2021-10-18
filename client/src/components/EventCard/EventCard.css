@@ -21,9 +21,13 @@ a {
   /* flex-grow: 1;
   height: 40vh; */
   flex: 0 1 30%;
+  border-radius: 10px;
+}
+.event-card:hover {
+  transform: scale(1.01);
 }
 .event-card-image-container {
-  width: 250px;
+  width: 350px;
   height: 250px;
   margin: 0 auto;
 }
@@ -42,6 +46,7 @@ a {
   min-width: 200px;
   min-height: 100px;
   margin: 0 auto;
+  font-size: 16px;
 }
 .event-card-title {
   font-weight: bold;
